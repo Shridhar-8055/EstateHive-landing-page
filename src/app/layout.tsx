@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-montserrat",
+});
+
 export const metadata: Metadata = {
-  title: "Quantum Algo | Precision Automation for Currency Traders",
-  description: "Advanced algorithmic trading powered by adaptive AI. Deploy disciplined strategies that analyze macro trends, price action, and liquidity flows in real-time.",
+  title: "POW | Progress Overcome Win - Algorithmic Forex Trading",
+  description: "Discover how to develop consistent multi-strategy algo portfolios. Get $100,000+ in guaranteed funding and achieve 3-5 figure monthly withdrawals trading forex.",
 };
 
 export default function RootLayout({
@@ -14,9 +21,13 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <link rel="preconnect" href="https://api.fontshare.com" />
+        {/* Clash Display Font from Fontshare */}
+        <link
+          href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap"
+          rel="stylesheet"
+        />
       </head>
-      <body>{children}</body>
+      <body className={`${montserrat.className} antialiased`}>{children}</body>
     </html>
   );
 }
