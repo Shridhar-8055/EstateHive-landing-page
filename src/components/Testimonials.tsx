@@ -1,7 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
+import ScrollAnimate from './ScrollAnimate';
 
 const testimonials = [
     {
@@ -64,7 +65,27 @@ const testimonials = [
 
 export default function Testimonials() {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const cardsPerView = 5;
+    // Responsive cards per view: 1 on mobile, 2 on tablet, 5 on desktop
+    const getCardsPerView = () => {
+        if (typeof window !== 'undefined') {
+            if (window.innerWidth < 640) return 1;
+            if (window.innerWidth < 1024) return 2;
+            return 5;
+        }
+        return 5;
+    };
+    const [cardsPerView, setCardsPerView] = useState(5);
+
+    // Update cards per view on resize
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            setCardsPerView(getCardsPerView());
+            const handleResize = () => setCardsPerView(getCardsPerView());
+            window.addEventListener('resize', handleResize);
+            return () => window.removeEventListener('resize', handleResize);
+        }
+    }, []);
+
     const totalSlides = Math.ceil(testimonials.length / cardsPerView);
 
     const nextSlide = () => {
@@ -84,29 +105,31 @@ export default function Testimonials() {
         <section className="bg-[#2B2265] pt-20 md:pt-24 pb-16 md:pb-20">
             <div className="w-full mx-auto px-4 md:px-8 lg:px-16">
                 {/* Section Header */}
-                <h2
-                    className="text-2xl md:text-3xl font-black text-white text-center mb-4"
-                    style={{ fontFamily: '"Clash Display", sans-serif', fontStyle: 'italic' }}
-                >
-                    <em>See what our traders have to say...</em>
-                </h2>
-                <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
-                    Real reviews from real traders who are using our system to achieve consistent results.
-                </p>
+                <ScrollAnimate>
+                    <h2
+                        className="text-2xl md:text-3xl font-black text-white text-center mb-4"
+                        style={{ fontFamily: '"Clash Display", sans-serif', fontStyle: 'italic' }}
+                    >
+                        <em>See what our traders have to say...</em>
+                    </h2>
+                    <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+                        Real reviews from real traders who are using our system to achieve consistent results.
+                    </p>
+                </ScrollAnimate>
 
                 {/* Carousel Container */}
                 <div className="relative">
                     {/* Left Arrow */}
                     <button
                         onClick={prevSlide}
-                        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 z-10 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 transition-all flex items-center justify-center"
+                        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1 sm:-translate-x-2 z-10 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/10 hover:bg-white/20 transition-all flex items-center justify-center"
                         aria-label="Previous testimonials"
                     >
-                        <ChevronLeft className="w-6 h-6 text-white" />
+                        <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                     </button>
 
                     {/* Testimonials Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 px-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 px-4 sm:px-8">
                         {visibleTestimonials.map((testimonial, index) => (
                             <div
                                 key={index}
@@ -152,10 +175,10 @@ export default function Testimonials() {
                     {/* Right Arrow */}
                     <button
                         onClick={nextSlide}
-                        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 z-10 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 transition-all flex items-center justify-center"
+                        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1 sm:translate-x-2 z-10 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/10 hover:bg-white/20 transition-all flex items-center justify-center"
                         aria-label="Next testimonials"
                     >
-                        <ChevronRight className="w-6 h-6 text-white" />
+                        <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                     </button>
                 </div>
 

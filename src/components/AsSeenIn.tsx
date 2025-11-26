@@ -4,41 +4,45 @@ export default function AsSeenIn() {
     return (
         <section className="bg-white pt-8 md:pt-10 pb-0">
             <div className="max-w-7xl mx-auto px-4 md:px-6">
-                <div className="flex items-center justify-center gap-8 md:gap-12 lg:gap-20">
+                {/* Mobile: Stack vertically, Desktop: Horizontal */}
+                <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-12 lg:gap-20">
                     {/* As Seen In Text */}
-                    <h3 className="text-gray-900 font-black text-2xl md:text-3xl">As Seen In</h3>
+                    <h3 className="text-gray-900 font-black text-xl md:text-3xl mb-2 md:mb-0">As Seen In</h3>
 
-                    {/* Digital Journal */}
-                    <img
-                        src="/digital-journal.png"
-                        alt="Digital Journal"
-                        className="h-8 md:h-10 w-auto grayscale hover:grayscale-0 transition-all"
-                    />
+                    {/* Logos Grid - Mobile: 2 columns, Desktop: Row */}
+                    <div className="flex flex-wrap items-center justify-center gap-4 md:gap-8 lg:gap-12">
+                        {/* Digital Journal */}
+                        <img
+                            src="/digital-journal.png"
+                            alt="Digital Journal"
+                            className="h-6 sm:h-8 md:h-10 w-auto grayscale hover:grayscale-0 transition-all"
+                        />
 
-                    {/* MarketWatch */}
-                    <img
-                        src="/marketwatch.png"
-                        alt="MarketWatch"
-                        className="h-6 md:h-7 w-auto grayscale hover:grayscale-0 transition-all"
-                    />
+                        {/* MarketWatch */}
+                        <img
+                            src="/marketwatch.png"
+                            alt="MarketWatch"
+                            className="h-5 sm:h-6 md:h-7 w-auto grayscale hover:grayscale-0 transition-all"
+                        />
 
-                    {/* FOX 28 */}
-                    <img
-                        src="/fox28.png"
-                        alt="FOX 28"
-                        className="h-6 md:h-7 w-auto grayscale hover:grayscale-0 transition-all"
-                    />
+                        {/* FOX 28 */}
+                        <img
+                            src="/fox28.png"
+                            alt="FOX 28"
+                            className="h-5 sm:h-6 md:h-7 w-auto grayscale hover:grayscale-0 transition-all"
+                        />
 
-                    {/* FOX 43 */}
-                    <img
-                        src="/fox43.png"
-                        alt="FOX 43"
-                        className="h-6 md:h-7 w-auto grayscale hover:grayscale-0 transition-all"
-                    />
+                        {/* FOX 43 */}
+                        <img
+                            src="/fox43.png"
+                            alt="FOX 43"
+                            className="h-5 sm:h-6 md:h-7 w-auto grayscale hover:grayscale-0 transition-all"
+                        />
 
-                    {/* BENZINGA */}
-                    <div className="text-gray-900 font-black text-base md:text-lg tracking-tight">
-                        BENZINGA
+                        {/* BENZINGA */}
+                        <div className="text-gray-900 font-black text-sm md:text-lg tracking-tight">
+                            BENZINGA
+                        </div>
                     </div>
                 </div>
 
