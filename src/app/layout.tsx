@@ -9,8 +9,74 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "POW | Progress Overcome Win - Algorithmic Forex Trading",
-  description: "Discover how to develop consistent multi-strategy algo portfolios. Get $100,000+ in guaranteed funding and achieve 3-5 figure monthly withdrawals trading forex.",
+  title: "Quantum Algo | Algorithmic Forex Trading & Prop Firm Funding",
+  description: "Discover how to develop consistent multi-strategy algo portfolios and avoid emotional decisions without technical analysis. Get $100,000+ in guaranteed prop firm funding and achieve 3-5 figure monthly withdrawals trading forex with automated strategies.",
+  keywords: [
+    "algorithmic trading",
+    "forex trading",
+    "prop firm funding",
+    "automated trading",
+    "EA trading",
+    "forex algo",
+    "trading strategies",
+    "prop trading",
+    "funded trader",
+    "forex robots",
+    "quantitative trading",
+    "passive income trading"
+  ],
+  authors: [{ name: "Quantum Algo" }],
+  creator: "Quantum Algo",
+  publisher: "Quantum Algo",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://quantumalgo.com",
+    siteName: "Quantum Algo",
+    title: "Quantum Algo | Algorithmic Forex Trading & Prop Firm Funding",
+    description: "Discover how to develop consistent multi-strategy algo portfolios. Get $100,000+ in guaranteed funding and achieve 3-5 figure monthly withdrawals trading forex.",
+    images: [
+      {
+        url: "/QA logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Quantum Algo - Algorithmic Forex Trading",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Quantum Algo | Algorithmic Forex Trading & Prop Firm Funding",
+    description: "Discover how to develop consistent multi-strategy algo portfolios. Get $100,000+ in guaranteed funding and achieve 3-5 figure monthly withdrawals.",
+    images: ["/QA logo.png"],
+    creator: "@quantumalgo",
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/QA logo.png", type: "image/png" },
+    ],
+    apple: [
+      { url: "/QA logo.png" },
+    ],
+    shortcut: "/QA logo.png",
+  },
+  manifest: "/manifest.json",
+  alternates: {
+    canonical: "https://quantumalgo.com",
+  },
+  category: "Finance",
 };
 
 export default function RootLayout({
@@ -26,6 +92,13 @@ export default function RootLayout({
           href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap"
           rel="stylesheet"
         />
+        {/* Additional SEO meta tags */}
+        <meta name="theme-color" content="#230859" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="icon" href="/QA logo.png" />
+        <link rel="apple-touch-icon" href="/QA logo.png" />
       </head>
       <body className={`${montserrat.className} antialiased`}>{children}</body>
     </html>
