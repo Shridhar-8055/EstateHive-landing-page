@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import ScrollAnimate from './ScrollAnimate';
 
 export default function Letter() {
@@ -8,59 +9,89 @@ export default function Letter() {
             <div className="max-w-2xl mx-auto px-4 md:px-6">
                 {/* Section Title */}
                 <ScrollAnimate>
-                    <h2 className="text-xl md:text-2xl font-black text-gray-900 text-center mb-10">
-                        The NEW Way To Trade Using Algos That Makes Me{' '}
-                        <span className="text-[#A60D60]">$1-4K In Daily Returns</span> Trading Forex
+                    <h2 className="text-xl md:text-2xl font-black text-gray-900 text-center mb-2">
+                        The Smarter Way Professionals Trade With AI
                     </h2>
+                    <p className="text-[#A60D60] font-bold text-lg md:text-xl text-center mb-10">
+                        How I Help UAE Traders Create Consistent, Automated Forex Returns
+                    </p>
                 </ScrollAnimate>
 
                 {/* Letter Card */}
                 <div className="p-6 md:p-8 text-gray-800">
-                    <p className="text-[#A60D60] font-bold mb-4 text-lg">Dear trader,</p>
+                    <p className="text-[#A60D60] font-bold mb-4 text-lg">Dear Trader,</p>
 
                     <p className="mb-4 leading-relaxed font-semibold">
-                        Want to get funded and stay funded so you can withdraw profits and then scale your own live capital?
+                        Want to finally trade with confidence—funded, emotion-free, and focused on compounding real profits month after month?
                     </p>
 
                     <p className="mb-4 leading-relaxed font-semibold">
-                        Without studying charts, staying up all night to trade, failing prop challenges, or blowing your accounts?
+                        No more endless chart study, sleepless market stress, or blown accounts.
                     </p>
 
                     <p className="mb-6 leading-relaxed font-semibold">
-                        Most traders are stuck in 'challenge mode' not knowing how to set up their funded accounts to make profits, constantly stuck in a vicious cycle of constant failure.
+                        Quantum Algo lets you skip "the fear phase" and step into reliable income using AI trade automation and capital scaling using prop-firms.
                     </p>
 
-                    <p className="text-[#A60D60] font-bold mb-4 text-lg">We provide a 3 step process...</p>
+                    <p className="text-[#A60D60] font-bold mb-4 text-lg">Here's the simple process I guide every approved trader through…</p>
 
                     <div className="space-y-4 mb-6">
                         <p className="leading-relaxed font-semibold">
-                            <span className="font-bold">Step 1:</span> Secure Prop Firm Capital $50,000 account. Done for you.
+                            <span className="font-bold">1:</span> Buy a $100,000 funded capital. Clear Phase 1 & Phase 2 with QA PropPass EA.
                         </p>
 
                         <p className="leading-relaxed font-semibold">
-                            <span className="font-bold">Step 2:</span> Develop a diversified, algo traded portfolio designed to return 2-4% per month (we will train you to do this) for your $50k account.
+                            <span className="font-bold">2:</span> Get set up with Quantum Algo's diversified, AI-optimized portfolio targeting a steady 3-4% monthly yield (no technical skills needed, we configure everything)
                         </p>
 
                         <p className="leading-relaxed font-semibold">
-                            <span className="font-bold">Step 3:</span> Funnel your prop firm profits into live trading capital and use the <span className="underline">same portfolio</span> to net 6%+ in monthly returns (you can aim for more if you wish - it's all relative to your risk appetite).
+                            <span className="font-bold">3:</span> Roll profits into your personal live account and use the same AI strategies to scale to 6%+ monthly. Adjust risk as you wish—the system adapts to you.
                         </p>
                     </div>
 
-                    <p className="text-[#A60D60] font-bold mb-4 leading-relaxed">
-                        Repeat steps 1-3 and watch your growth stack up to $100k+ in under 12 months - just with compounding and sensible consistency.
+                    <div className="bg-[#E8D4F0] p-4 rounded-lg mb-6">
+                        <p className="text-gray-900 font-bold leading-relaxed">
+                            Your job? Monitor performance, refine risk, schedule withdrawals.
+                        </p>
+                        <p className="text-gray-900 font-semibold leading-relaxed mt-2">
+                            Scale with professional-grade AI, not hype.
+                        </p>
+                    </div>
+
+                    <p className="text-[#A60D60] font-bold leading-relaxed mb-4">
+                        Think it's too good to be true? Perfect—you're the kind of trader I want.
                     </p>
 
-                    <p className="text-[#A60D60] font-bold leading-relaxed">
-                        Whilst systematically scaling your Prop Trading Capital.
+                    <p className="font-semibold leading-relaxed">
+                        Apply, get approved, and I'll show you live investor dashboards so you can verify every metric yourself.
+                    </p>
+
+                    <p className="font-bold leading-relaxed mt-4">
+                        Real accounts. Real withdrawals. Real data.
                     </p>
                 </div>
+
+                {/* CTA Button */}
+                <div className="mt-8">
+                    <Link
+                        href="#apply"
+                        className="block w-full bg-[#A60D60] hover:bg-[#A60D60]/90 text-white font-extrabold py-5 rounded-full text-lg md:text-xl uppercase tracking-wide text-center transition-all hover:shadow-[0_0_30px_rgba(166,13,96,0.4)]"
+                    >
+                        Apply Now For Access
+                    </Link>
+                </div>
+
+                {/* Urgency Text */}
+                <p className="text-sky-400 font-bold text-sm text-center mt-4">
+                    HURRY! Only 4 onboarding slots left until December 2025.
+                </p>
 
                 {/* Chart Image with Verified Results Overlay */}
                 <div className="mt-10 relative mx-0 md:-mx-20 lg:-mx-32">
                     <div className="overflow-hidden bg-white p-2">
                         <img
-                            src="https://cdn.prod.website-files.com/654a3c02805675afd5ab4e67/654b5fa19318b600d8957524_Rectangle%2019694.webp"
-                            alt="MyFXBook Live Performance Chart - Verified Results"
+                            src="https://quantumalgo.pro/1-year-backtest.jpg"
+                            alt="1 Year Backtest - Verified Results"
                             className="w-full h-auto border border-white"
                         />
                     </div>

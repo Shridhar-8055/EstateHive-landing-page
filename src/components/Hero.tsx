@@ -6,7 +6,7 @@ import ScrollAnimate from './ScrollAnimate';
 
 export default function Hero() {
     return (
-        <section className="relative bg-[#230859] pt-4 sm:pt-6 pb-8 sm:pb-12 overflow-hidden">
+        <section className="relative bg-[#250E50] pt-4 sm:pt-6 pb-8 sm:pb-12 overflow-hidden">
             {/* Background gradient effects */}
             <div className="absolute inset-0 pointer-events-none">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] sm:w-[1000px] h-[400px] sm:h-[600px] bg-[#A60D60]/5 rounded-full blur-[100px] sm:blur-[150px]" />
@@ -19,7 +19,7 @@ export default function Hero() {
                     <div>
                         <img
                             src="/QA%20logo.png"
-                            alt="QA"
+                            alt="Quantum Algo"
                             className="h-8 sm:h-12 md:h-16 w-auto"
                         />
                     </div>
@@ -37,24 +37,24 @@ export default function Hero() {
                     {/* Pre-headline */}
                     <ScrollAnimate>
                         <p className="text-white font-bold text-xs sm:text-sm md:text-base mb-3 sm:mb-4">
-                            For Traders Who Want 3-5 Fig Withdrawals
+                            For UAE Traders Who Want Consistent, Stress-Free, AI-Driven Profits
                         </p>
                     </ScrollAnimate>
 
-                {/* Main Headline with Clash Display font - 3 lines */}
+                {/* Main Headline with Clash Display font */}
                 <ScrollAnimate delay={100}>
                     <h1
                         className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-[2.75rem] font-semibold text-white leading-[1.2] sm:leading-[1.15] mb-4 sm:mb-6 px-2"
                         style={{ fontFamily: '"Clash Display", sans-serif' }}
                     >
-                        Finally, Discover How To Develop Consistent Multi-Strategy Algo Portfolios And Avoid Emotional Decisions Without Technical Analysis.
+                        Finally, Unlock Consistent AI-driven Trading And Ditch Emotional Decisions. No Complex Technical Analysis Required.
                     </h1>
                 </ScrollAnimate>
 
                 {/* Subheadline */}
                 <p className="text-white font-bold text-xs sm:text-sm md:text-base max-w-3xl mx-auto mb-6 sm:mb-8 px-2">
-                    Stack the odds in your favor with our diversified automated strategies & coaching{' '}
-                    <span className="text-[#A60D60]">with $100,000 in guaranteed funding available.</span>
+                    Stack the odds in your favor with Quantum Algo's automated momentum strategies, volatility detection, and AI-powered risk management.{' '}
+                    <span className="text-sky-400">Built for large UAE accounts and serious traders, not beginners.</span>
                 </p>
 
                 {/* Video Embed */}
@@ -63,7 +63,7 @@ export default function Hero() {
                         <iframe
                             className="absolute inset-0 w-full h-full"
                             src="https://www.youtube.com/embed/hmkHPI32D5Y"
-                            title="POW Trading"
+                            title="Quantum Algo Trading"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
                         />
@@ -76,9 +76,14 @@ export default function Hero() {
                         href="#apply"
                         className="block w-full bg-[#A60D60] hover:bg-[#A60D60]/90 text-white font-extrabold py-3 sm:py-5 rounded-full text-base sm:text-lg md:text-xl uppercase tracking-wide transition-all hover:shadow-[0_0_30px_rgba(166,13,96,0.4)]"
                     >
-                        Apply Now
+                        Apply Now & Unlock Your AI Trading Setup
                     </Link>
                 </div>
+
+                {/* Urgency Text */}
+                <p className="text-sky-400 font-bold text-xs sm:text-sm mb-4">
+                    HURRY! Only 4 onboarding slots left until December 2025.
+                </p>
 
                 {/* Trustpilot Stars */}
                 <div className="flex justify-center gap-1 mb-2">
@@ -100,51 +105,21 @@ export default function Hero() {
                             />
                         ))}
                     </div>
-                    <span className="text-white text-xs sm:text-sm">4.8/5 from 388 reviews</span>
+                    <span className="text-white text-xs sm:text-sm">4.9/5 from 1,400+ UAE investors</span>
                 </div>
 
                 {/* Application note */}
                 <p className="text-white font-bold text-xs sm:text-sm mb-6 sm:mb-10 max-w-2xl mx-auto px-4">
-                    It's a 2 min application, if accepted you'll get all our strategies, coaching, education, support and a funded account to trade with.
+                    It's a fast setup. Approved users get instant access to the full algorithm, expert support, and their own automated trading dashboard.
                 </p>
 
-                {/* Trust Badges - Award Style */}
-                <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-8 items-center px-2">
-                    {/* $54M Funded Badge */}
-                    <div className="w-[80px] h-[80px] sm:w-[120px] sm:h-[120px] md:w-[140px] md:h-[140px]">
-                        <img
-                            src="/54funded%20logo.svg"
-                            alt="$54M Funded"
-                            className="w-full h-full object-contain"
-                        />
-                    </div>
-
-                    {/* Low Risk Badge */}
-                    <div className="w-[80px] h-[80px] sm:w-[120px] sm:h-[120px] md:w-[140px] md:h-[140px]">
-                        <img
-                            src="/low%20risk.svg"
-                            alt="1-5% Drawdowns Low Risk"
-                            className="w-full h-full object-contain"
-                        />
-                    </div>
-
-                    {/* 100% of Profits Badge */}
-                    <div className="w-[100px] h-[100px] sm:w-[160px] sm:h-[160px] md:w-[180px] md:h-[180px]">
-                        <img
-                            src="/100%25%20Profits.png"
-                            alt="100% of Profits"
-                            className="w-full h-full object-contain"
-                        />
-                    </div>
-
-                    {/* Guaranteed Badge */}
-                    <div className="w-[80px] h-[80px] sm:w-[120px] sm:h-[120px] md:w-[140px] md:h-[140px]">
-                        <img
-                            src="/gauranteed.svg"
-                            alt="Guaranteed"
-                            className="w-full h-full object-contain"
-                        />
-                    </div>
+                {/* Trust Badge */}
+                <div className="flex justify-center px-2">
+                    <img
+                        src="/L100%25%20Profits.png"
+                        alt="100% of Profits No Profit Share"
+                        className="w-full max-w-4xl h-auto"
+                    />
                 </div>
                 </div>
             </div>

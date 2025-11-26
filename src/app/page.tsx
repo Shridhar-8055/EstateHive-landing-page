@@ -5,6 +5,9 @@ import FundingProof from '@/components/FundingProof';
 import Testimonials from '@/components/Testimonials';
 import Features from '@/components/Features';
 import SuccessStories from '@/components/SuccessStories';
+import WhyUAE from '@/components/WhyUAE';
+import NotForEveryone from '@/components/NotForEveryone';
+import GetStarted from '@/components/GetStarted';
 import PropFunding from '@/components/PropFunding';
 
 export default function Home() {
@@ -17,6 +20,9 @@ export default function Home() {
       <Testimonials />
       <Features />
       <SuccessStories />
+      <WhyUAE />
+      <NotForEveryone />
+      <GetStarted />
       <PropFunding />
     </main>
   );

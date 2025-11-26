@@ -9,21 +9,22 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Quantum Algo | Algorithmic Forex Trading & Prop Firm Funding",
-  description: "Discover how to develop consistent multi-strategy algo portfolios and avoid emotional decisions without technical analysis. Get $100,000+ in guaranteed prop firm funding and achieve 3-5 figure monthly withdrawals trading forex with automated strategies.",
+  metadataBase: new URL("https://quantumalgo.com"),
+  title: "Quantum Algo | AI-Driven Forex Trading for UAE Traders",
+  description: "Unlock consistent AI-driven trading for UAE traders. Get $100K+ funded accounts, automated momentum strategies, and 1-5% drawdowns. Built for serious traders in Dubai, Abu Dhabi & UAE.",
   keywords: [
-    "algorithmic trading",
-    "forex trading",
-    "prop firm funding",
-    "automated trading",
-    "EA trading",
-    "forex algo",
-    "trading strategies",
-    "prop trading",
-    "funded trader",
+    "UAE forex trading",
+    "Dubai algorithmic trading",
+    "AI trading UAE",
+    "prop firm funding UAE",
+    "automated forex trading",
+    "forex algo Dubai",
+    "trading strategies UAE",
+    "funded trader UAE",
     "forex robots",
     "quantitative trading",
-    "passive income trading"
+    "Abu Dhabi trading",
+    "UAE investors"
   ],
   authors: [{ name: "Quantum Algo" }],
   creator: "Quantum Algo",
@@ -44,8 +45,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://quantumalgo.com",
     siteName: "Quantum Algo",
-    title: "Quantum Algo | Algorithmic Forex Trading & Prop Firm Funding",
-    description: "Discover how to develop consistent multi-strategy algo portfolios. Get $100,000+ in guaranteed funding and achieve 3-5 figure monthly withdrawals trading forex.",
+    title: "Quantum Algo | AI-Driven Forex Trading for UAE Traders",
+    description: "Unlock consistent AI-driven trading for UAE traders. Get $100K+ funded accounts, automated momentum strategies, and 1-5% drawdowns.",
     images: [
       {
         url: "/QA logo.png",
@@ -57,8 +58,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Quantum Algo | Algorithmic Forex Trading & Prop Firm Funding",
-    description: "Discover how to develop consistent multi-strategy algo portfolios. Get $100,000+ in guaranteed funding and achieve 3-5 figure monthly withdrawals.",
+    title: "Quantum Algo | AI-Driven Forex Trading for UAE Traders",
+    description: "Unlock consistent AI-driven trading for UAE traders. Get $100K+ funded accounts, automated momentum strategies, and 1-5% drawdowns.",
     images: ["/QA logo.png"],
     creator: "@quantumalgo",
   },

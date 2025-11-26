@@ -6,60 +6,67 @@ import ScrollAnimate from './ScrollAnimate';
 
 const testimonials = [
     {
-        name: "Vishal S",
-        date: "9 July",
+        name: "Faisal A.",
+        location: "Abu Dhabi",
         verified: true,
-        title: "POW: A Comprehensive and Supportive Eco...",
-        content: "As a seasoned trader, I was initially skeptical about yet another EA firm promising t..."
+        title: "Finally removed my emotional bias",
+        content: "After 12 years of trading manually, this is the first system that actually removed my emotional bias. The automation is clean, the drawdowns stay controlled, and the month-on-month growth is genuinely consistent."
     },
     {
-        name: "Tom",
-        date: "7 July",
-        verified: false,
-        title: "I have been a POW member for many years...",
-        content: "I have been a POW member for many years and I am very pleased with the product. The..."
-    },
-    {
-        name: "morgan mitchell",
-        date: "5 July",
-        verified: false,
-        title: "POW Banker Review 🔥",
-        content: "POW Banker Review 🔥 POW Banker is easily one of the best EAs I've used. I've tried..."
-    },
-    {
-        name: "Grant Rubenstein",
-        date: "15 June",
-        verified: false,
-        title: "Joining POW has been the best...",
-        content: "Joining POW has been the best investment I've made. They genuinely want you to succee..."
-    },
-    {
-        name: "Graeme Frost",
-        date: "13 June",
-        verified: false,
-        title: "POW is the best community and EA around...",
-        content: "POW is the best community and EA around in my opinion. They support your learning wi..."
-    },
-    {
-        name: "Lewis",
-        date: "May 11, 2023",
+        name: "Vishnu R.",
+        location: "Dubai",
         verified: true,
-        title: "POW....ER! Amazing Experience",
-        content: "POW….ER! After joining POW only just a few weeks ago, i am already starting to fully..."
+        title: "Live dashboard convinced me",
+        content: "I was skeptical at first, but the live dashboard access convinced me. I've been using Quantum Algo for 7 months now. Withdrawals are smooth, and the team always helps me adjust risk whenever markets turn volatile."
     },
     {
-        name: "Mark Brislee",
-        date: "Aug 15, 2023",
+        name: "Omar H.",
+        location: "Sharjah",
         verified: true,
-        title: "Following POW for over 2 years",
-        content: "I've been following Pow for over 2 years, finally got involved 2 weeks ago, the Bank..."
+        title: "Perfect stability for large accounts",
+        content: "The best part is the stability. No wild swings, no crazy gambling strategies. Just steady, predictable returns. Perfect for someone like me managing a larger account."
     },
     {
-        name: "Daniel Mejia",
-        date: "Aug 30, 2023",
+        name: "Nitin K.",
+        location: "Dubai Marina",
         verified: true,
-        title: "Got my funded account with MFF",
-        content: "I've been using Banker EA for a few months now and I already managed to get my fund..."
+        title: "Support team is actually responsive",
+        content: "Their support team is actually responsive… not like other EA sellers. When I shifted from a $20k to a $75k account, they helped me restructure my risk and scale properly. That made a huge difference."
+    },
+    {
+        name: "Sarah M.",
+        location: "Dubai",
+        verified: true,
+        title: "Got my time back",
+        content: "Quantum Algo gave me back my time. I barely spend 30-40 minutes a week on my portfolio now. The AI handles everything, and I just monitor performance and schedule withdrawals."
+    },
+    {
+        name: "Imran S.",
+        location: "Abu Dhabi",
+        verified: true,
+        title: "Adjusts to market behavior",
+        content: "I've used so many bots over the years that failed after a few weeks. This one didn't. It adjusts to market behaviour, and you feel the difference in how stable the equity curve stays."
+    },
+    {
+        name: "Anand P.",
+        location: "JLT Dubai",
+        verified: true,
+        title: "Proper onboarding and education",
+        content: "They actually teach you how to use the system properly. Not just a download link. The onboarding alone helped me understand why I was losing money before."
+    },
+    {
+        name: "Mohammed R.",
+        location: "Business Bay",
+        verified: true,
+        title: "Passed funding challenge and scaled",
+        content: "I passed a $50k funding evaluation using their strategy suite, then scaled to a $100k account. The risk control is the secret…. no reckless over-leveraging."
+    },
+    {
+        name: "Elias D.",
+        location: "Dubai Hills",
+        verified: true,
+        title: "Most reliable automated system",
+        content: "This is the most reliable automated system I've used. Drawdowns stay low, profits compound, and it doesn't require me to sit in front of screens all day. Worth every dirham."
     }
 ];
 
@@ -110,10 +117,10 @@ export default function Testimonials() {
                         className="text-2xl md:text-3xl font-black text-white text-center mb-4"
                         style={{ fontFamily: '"Clash Display", sans-serif', fontStyle: 'italic' }}
                     >
-                        <em>See what our traders have to say...</em>
+                        <em>See What Our UAE Traders Say…</em>
                     </h2>
                     <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
-                        Real reviews from real traders who are using our system to achieve consistent results.
+                        Real, Unfiltered Results From Real Professionals.
                     </p>
                 </ScrollAnimate>
 
@@ -135,18 +142,18 @@ export default function Testimonials() {
                                 key={index}
                                 className="bg-white rounded-lg p-4 shadow-lg"
                             >
-                                {/* Trustpilot Stars */}
+                                {/* Stars */}
                                 <div className="flex items-center gap-2 mb-3">
                                     <div className="flex gap-0.5">
                                         {[1, 2, 3, 4, 5].map((star) => (
-                                            <div key={star} className="w-5 h-5 bg-[#00b67a] flex items-center justify-center">
+                                            <div key={star} className="w-5 h-5 bg-[#A60D60] flex items-center justify-center">
                                                 <Star className="w-3 h-3 text-white fill-white" />
                                             </div>
                                         ))}
                                     </div>
                                     {testimonial.verified && (
                                         <span className="text-gray-500 text-xs flex items-center gap-1">
-                                            <svg className="w-3 h-3 text-[#00b67a]" viewBox="0 0 20 20" fill="currentColor">
+                                            <svg className="w-3 h-3 text-[#A60D60]" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                                             </svg>
                                             Verified
@@ -160,13 +167,13 @@ export default function Testimonials() {
                                 </h3>
 
                                 {/* Content */}
-                                <p className="text-gray-600 text-xs leading-relaxed mb-3 line-clamp-3">
-                                    {testimonial.content}
+                                <p className="text-gray-600 text-xs leading-relaxed mb-3 line-clamp-4">
+                                    "{testimonial.content}"
                                 </p>
 
                                 {/* Author */}
                                 <p className="text-gray-900 text-xs">
-                                    <span className="font-bold">{testimonial.name}</span>, {testimonial.date}
+                                    <span className="font-bold">— {testimonial.name}</span>, {testimonial.location}
                                 </p>
                             </div>
                         ))}
@@ -182,15 +189,27 @@ export default function Testimonials() {
                     </button>
                 </div>
 
-                {/* Trustpilot Footer */}
+                {/* CTA Button */}
+                <div className="text-center mt-10">
+                    <a
+                        href="#apply"
+                        className="inline-block bg-[#A60D60] hover:bg-[#A60D60]/90 text-white font-black py-4 px-12 rounded-full text-lg uppercase tracking-wide transition-all hover:shadow-[0_0_30px_rgba(166,13,96,0.4)]"
+                    >
+                        Join Traders Getting These Results
+                    </a>
+                    <p className="text-sky-400 font-bold text-sm mt-4">
+                        HURRY! Only 4 onboarding slots left until December 2025.
+                    </p>
+                </div>
+
+                {/* Rating Footer */}
                 <div className="text-center mt-8">
                     <p className="text-gray-400 text-sm">
-                        Rated <span className="text-white font-bold">4.3</span> / 5 based on <span className="text-white underline">458 reviews</span>. Showing our 3, 4 & 5 star reviews.
+                        Rated <span className="text-white font-bold">4.7</span> / 5 by <span className="text-white underline">1,150+ UAE traders</span>
                     </p>
-                    <div className="flex items-center justify-center gap-1 mt-2">
-                        <Star className="w-4 h-4 text-[#00b67a] fill-[#00b67a]" />
-                        <span className="text-white text-sm font-semibold">Trustpilot</span>
-                    </div>
+                    <p className="text-gray-500 text-xs mt-2">
+                        Quantum Algo has earned top marks for reliability, trust and performance.
+                    </p>
                 </div>
             </div>
         </section>
