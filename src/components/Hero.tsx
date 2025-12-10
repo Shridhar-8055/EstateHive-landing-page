@@ -62,9 +62,11 @@ export default function Hero() {
                     <div className="relative aspect-video bg-black rounded-lg overflow-hidden shadow-2xl">
                         <iframe
                             className="absolute inset-0 w-full h-full"
-                            src="https://www.youtube.com/embed/hmkHPI32D5Y"
-                            title="Quantum Algo Trading"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            src="https://www.youtube.com/embed/VeU1tRsdzAc?si=IVebvOM5ugb4N-KF"
+                            title="YouTube video player"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
                             allowFullScreen
                         />
                     </div>
