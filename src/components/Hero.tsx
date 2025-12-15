@@ -98,12 +98,11 @@ export default function Hero() {
                 <div className="flex items-center justify-center gap-2 sm:gap-3 mb-3">
                     <div className="flex -space-x-2">
                         {[1, 2, 3, 4, 5].map((i) => (
-                            <div
+                            <img
                                 key={i}
-                                className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 rounded-full border-2 border-[#2B2265] overflow-hidden"
-                                style={{
-                                    background: `linear-gradient(135deg, ${['#667eea', '#f093fb', '#4facfe', '#43e97b', '#fa709a'][i-1]}, ${['#764ba2', '#f5576c', '#00f2fe', '#38f9d7', '#fee140'][i-1]})`
-                                }}
+                                src={`/avatar${i}.jpeg`}
+                                alt={`Investor ${i}`}
+                                className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 rounded-full border-2 border-[#2B2265] object-cover"
                             />
                         ))}
                     </div>
