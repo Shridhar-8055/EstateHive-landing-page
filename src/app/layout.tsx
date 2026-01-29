@@ -15,26 +15,25 @@ const merriweather = Merriweather({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://quantumalgo.com"),
-  title: "Quantum Algo | AI-Driven Forex Trading for UAE Traders",
-  description: "Unlock consistent AI-driven trading for UAE traders. Get $100K+ funded accounts, automated momentum strategies, and 1-5% drawdowns. Built for serious traders in Dubai, Abu Dhabi & UAE.",
+  metadataBase: new URL("https://estatehive.com"),
+  title: "Estate Hive | Dubai Real Estate Investment for Indian Investors",
+  description: "Invest in Dubai real estate with Estate Hive. Get tax-free rental income, golden visa opportunities, and expert guidance for Indian investors looking to diversify their portfolio.",
   keywords: [
-    "UAE forex trading",
-    "Dubai algorithmic trading",
-    "AI trading UAE",
-    "prop firm funding UAE",
-    "automated forex trading",
-    "forex algo Dubai",
-    "trading strategies UAE",
-    "funded trader UAE",
-    "forex robots",
-    "quantitative trading",
-    "Abu Dhabi trading",
-    "UAE investors"
+    "Dubai real estate",
+    "Dubai property investment",
+    "Indian investors Dubai",
+    "Dubai golden visa",
+    "tax-free property investment",
+    "Dubai off-plan properties",
+    "EMAAR properties",
+    "DAMAC properties",
+    "Dubai rental yield",
+    "UAE property investment",
+    "Dubai freehold property"
   ],
-  authors: [{ name: "Quantum Algo" }],
-  creator: "Quantum Algo",
-  publisher: "Quantum Algo",
+  authors: [{ name: "Estate Hive" }],
+  creator: "Estate Hive",
+  publisher: "Estate Hive",
   robots: {
     index: true,
     follow: true,
@@ -49,41 +48,41 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://quantumalgo.com",
-    siteName: "Quantum Algo",
-    title: "Quantum Algo | AI-Driven Forex Trading for UAE Traders",
-    description: "Unlock consistent AI-driven trading for UAE traders. Get $100K+ funded accounts, automated momentum strategies, and 1-5% drawdowns.",
+    url: "https://estatehive.com",
+    siteName: "Estate Hive",
+    title: "Estate Hive | Dubai Real Estate Investment for Indian Investors",
+    description: "Invest in Dubai real estate with Estate Hive. Get tax-free rental income, golden visa opportunities, and expert guidance.",
     images: [
       {
-        url: "/QA logo.png",
+        url: "/EH_WHite@300x-8.png",
         width: 1200,
         height: 630,
-        alt: "Quantum Algo - Algorithmic Forex Trading",
+        alt: "Estate Hive - Dubai Real Estate Investment",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Quantum Algo | AI-Driven Forex Trading for UAE Traders",
-    description: "Unlock consistent AI-driven trading for UAE traders. Get $100K+ funded accounts, automated momentum strategies, and 1-5% drawdowns.",
-    images: ["/QA logo.png"],
-    creator: "@quantumalgo",
+    title: "Estate Hive | Dubai Real Estate Investment for Indian Investors",
+    description: "Invest in Dubai real estate with Estate Hive. Get tax-free rental income, golden visa opportunities, and expert guidance.",
+    images: ["/EH_WHite@300x-8.png"],
+    creator: "@estatehive",
   },
   icons: {
     icon: [
       { url: "/favicon.ico" },
-      { url: "/QA logo.png", type: "image/png" },
+      { url: "/EH_WHite@300x-8.png", type: "image/png" },
     ],
     apple: [
-      { url: "/QA logo.png" },
+      { url: "/EH_WHite@300x-8.png" },
     ],
-    shortcut: "/QA logo.png",
+    shortcut: "/EH_WHite@300x-8.png",
   },
   manifest: "/manifest.json",
   alternates: {
-    canonical: "https://quantumalgo.com",
+    canonical: "https://estatehive.com",
   },
-  category: "Finance",
+  category: "Real Estate",
 };
 
 export default function RootLayout({
@@ -104,8 +103,8 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="format-detection" content="telephone=no" />
-        <link rel="icon" href="/QA logo.png" />
-        <link rel="apple-touch-icon" href="/QA logo.png" />
+        <link rel="icon" href="/EH_WHite@300x-8.png" />
+        <link rel="apple-touch-icon" href="/EH_WHite@300x-8.png" />
       </head>
       <body className={`${montserrat.className} ${merriweather.variable} antialiased`}>{children}</body>
     </html>
