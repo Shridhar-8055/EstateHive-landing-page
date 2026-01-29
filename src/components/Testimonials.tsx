@@ -109,17 +109,17 @@ export default function Testimonials() {
     );
 
     return (
-        <section className="bg-[#2B2265] pt-20 md:pt-24 pb-16 md:pb-20">
+        <section className="bg-white pt-20 md:pt-24 pb-16 md:pb-20">
             <div className="w-full mx-auto px-4 md:px-8 lg:px-16">
                 {/* Section Header */}
                 <ScrollAnimate>
                     <h2
-                        className="text-2xl md:text-3xl font-black text-white text-center mb-4"
+                        className="text-2xl md:text-3xl font-black text-[#1B1B59] text-center mb-4"
                         style={{ fontFamily: '"Clash Display", sans-serif', fontStyle: 'italic' }}
                     >
                         <em>See What Our UAE Traders Say…</em>
                     </h2>
-                    <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+                    <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
                         Real, Unfiltered Results From Real Professionals.
                     </p>
                 </ScrollAnimate>
@@ -129,10 +129,10 @@ export default function Testimonials() {
                     {/* Left Arrow */}
                     <button
                         onClick={prevSlide}
-                        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1 sm:-translate-x-2 z-10 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/10 hover:bg-white/20 transition-all flex items-center justify-center"
+                        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1 sm:-translate-x-2 z-10 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#1B1B59]/10 hover:bg-[#1B1B59]/20 transition-all flex items-center justify-center"
                         aria-label="Previous testimonials"
                     >
-                        <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+                        <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 text-[#1B1B59]" />
                     </button>
 
                     {/* Testimonials Grid */}
@@ -146,14 +146,14 @@ export default function Testimonials() {
                                 <div className="flex items-center gap-2 mb-3">
                                     <div className="flex gap-0.5">
                                         {[1, 2, 3, 4, 5].map((star) => (
-                                            <div key={star} className="w-5 h-5 bg-[#A60D60] flex items-center justify-center">
+                                            <div key={star} className="w-5 h-5 bg-[#F44336] flex items-center justify-center">
                                                 <Star className="w-3 h-3 text-white fill-white" />
                                             </div>
                                         ))}
                                     </div>
                                     {testimonial.verified && (
                                         <span className="text-gray-500 text-xs flex items-center gap-1">
-                                            <svg className="w-3 h-3 text-[#A60D60]" viewBox="0 0 20 20" fill="currentColor">
+                                            <svg className="w-3 h-3 text-[#F44336]" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                                             </svg>
                                             Verified
@@ -182,10 +182,10 @@ export default function Testimonials() {
                     {/* Right Arrow */}
                     <button
                         onClick={nextSlide}
-                        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1 sm:translate-x-2 z-10 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/10 hover:bg-white/20 transition-all flex items-center justify-center"
+                        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1 sm:translate-x-2 z-10 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#1B1B59]/10 hover:bg-[#1B1B59]/20 transition-all flex items-center justify-center"
                         aria-label="Next testimonials"
                     >
-                        <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+                        <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-[#1B1B59]" />
                     </button>
                 </div>
 
@@ -193,7 +193,7 @@ export default function Testimonials() {
                 <div className="text-center mt-10">
                     <a
                         href="#apply"
-                        className="inline-block bg-[#A60D60] hover:bg-[#A60D60]/90 text-white font-black py-4 px-12 rounded-full text-lg uppercase tracking-wide transition-all hover:shadow-[0_0_30px_rgba(166,13,96,0.4)]"
+                        className="inline-block bg-[#F44336] hover:bg-[#F44336]/90 text-[#1B1B59] font-black py-4 px-12 rounded-full text-lg uppercase tracking-wide transition-all hover:shadow-[0_0_30px_rgba(166,13,96,0.4)]"
                     >
                         Join Traders Getting These Results
                     </a>
@@ -204,8 +204,8 @@ export default function Testimonials() {
 
                 {/* Rating Footer */}
                 <div className="text-center mt-8">
-                    <p className="text-gray-400 text-sm">
-                        Rated <span className="text-white font-bold">4.7</span> / 5 by <span className="text-white underline">1,150+ UAE traders</span>
+                    <p className="text-gray-600 text-sm">
+                        Rated <span className="text-[#1B1B59] font-bold">4.7</span> / 5 by <span className="text-[#1B1B59] underline">1,150+ UAE traders</span>
                     </p>
                     <p className="text-gray-500 text-xs mt-2">
                         Quantum Algo has earned top marks for reliability, trust and performance.

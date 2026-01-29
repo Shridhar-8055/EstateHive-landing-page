@@ -1,116 +1,78 @@
 'use client';
 
+import Link from 'next/link';
 import ScrollAnimate from './ScrollAnimate';
 
 export default function NotForEveryone() {
     return (
-        <section className="bg-white pt-12 md:pt-16 pb-16 md:pb-24">
-            <div className="max-w-[90rem] mx-auto px-4 md:px-6">
-                {/* Partner Logos */}
-                <ScrollAnimate>
-                    <p className="text-sky-400 font-bold text-xl text-center mb-10">
-                        Quantum Algo is built exactly for this market.
-                    </p>
-                    <div className="flex flex-wrap justify-center items-center gap-6 mb-12">
-                        <img src="/FAV!100%25%20Profits.png" alt="Prop Firm Partners" className="w-full max-w-[85rem] h-auto" />
-                    </div>
-                </ScrollAnimate>
-
+        <section className="bg-white py-16 sm:py-20 lg:py-24">
+            <div className="max-w-4xl mx-auto px-4 md:px-8">
                 {/* Section Header */}
                 <ScrollAnimate>
-                    <div className="text-center mb-12">
-                        <h2
-                            className="text-2xl md:text-4xl lg:text-5xl font-black text-gray-900 leading-tight"
-                            style={{ fontFamily: '"Clash Display", sans-serif', fontStyle: 'italic', fontWeight: 900 }}
-                        >
-                            <em>For Serious UAE Traders Only</em>
-                        </h2>
-                    </div>
+                    <h2
+                        className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-[#000000] mb-6 sm:mb-8"
+                        style={{ fontFamily: '"Clash Display", sans-serif' }}
+                    >
+                        WHAT HAPPENS ON THE CALL
+                    </h2>
                 </ScrollAnimate>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {/* NOT For */}
-                    <ScrollAnimate delay={100}>
-                        <div className="bg-gray-100 rounded-2xl p-8">
-                            <h3 className="text-xl font-black text-gray-900 mb-6">
-                                Quantum Algo is <span className="text-red-600">NOT</span> for:
-                            </h3>
-                            <ul className="space-y-4">
-                                <li className="flex items-start gap-3">
-                                    <span className="text-red-600 font-bold text-xl">✗</span>
-                                    <span className="text-gray-700 font-semibold">Beginners</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <span className="text-red-600 font-bold text-xl">✗</span>
-                                    <span className="text-gray-700 font-semibold">People expecting overnight riches</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <span className="text-red-600 font-bold text-xl">✗</span>
-                                    <span className="text-gray-700 font-semibold">Zero-risk seekers</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <span className="text-red-600 font-bold text-xl">✗</span>
-                                    <span className="text-gray-700 font-semibold">Anyone who refuses to follow risk parameters</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <span className="text-red-600 font-bold text-xl">✗</span>
-                                    <span className="text-gray-700 font-semibold">Traders who manually override strategy rules</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </ScrollAnimate>
+                <ScrollAnimate delay={100}>
+                    <p className="text-[#000000] font-bold text-lg sm:text-xl mb-6">
+                        This isn't a pitch. It's a planning session.
+                    </p>
+                </ScrollAnimate>
 
-                    {/* IS For */}
-                    <ScrollAnimate delay={200}>
-                        <div className="bg-[#E8D4F0] rounded-2xl p-8">
-                            <h3 className="text-xl font-black text-gray-900 mb-6">
-                                Quantum Algo <span className="text-[#A60D60]">IS</span> built for:
-                            </h3>
-                            <ul className="space-y-4">
-                                <li className="flex items-start gap-3">
-                                    <span className="text-[#A60D60] font-bold text-xl">✓</span>
-                                    <span className="text-gray-700 font-semibold">Experienced traders</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <span className="text-[#A60D60] font-bold text-xl">✓</span>
-                                    <span className="text-gray-700 font-semibold">Traders with 5-figure or 6-figure accounts</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <span className="text-[#A60D60] font-bold text-xl">✓</span>
-                                    <span className="text-gray-700 font-semibold">UAE residents looking for consistent income</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <span className="text-[#A60D60] font-bold text-xl">✓</span>
-                                    <span className="text-gray-700 font-semibold">Professionals wanting to scale</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <span className="text-[#A60D60] font-bold text-xl">✓</span>
-                                    <span className="text-gray-700 font-semibold">Indians in UAE who moved for legal forex access</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <span className="text-[#A60D60] font-bold text-xl">✓</span>
-                                    <span className="text-gray-700 font-semibold">Traders who value automation + transparency</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </ScrollAnimate>
-                </div>
+                <ScrollAnimate delay={150}>
+                    <p className="text-gray-700 text-base sm:text-lg mb-4">
+                        You'll tell us:
+                    </p>
+                </ScrollAnimate>
 
-                {/* Bottom CTA */}
+                <ScrollAnimate delay={200}>
+                    <ul className="text-gray-700 text-base sm:text-lg mb-8 space-y-2 list-disc list-inside">
+                        <li>Your budget</li>
+                        <li>Your goals (income, appreciation, visa, diversification)</li>
+                        <li>Your timeline</li>
+                    </ul>
+                </ScrollAnimate>
+
+                <ScrollAnimate delay={250}>
+                    <p className="text-gray-700 text-base sm:text-lg mb-4">
+                        We'll tell you:
+                    </p>
+                </ScrollAnimate>
+
                 <ScrollAnimate delay={300}>
-                    <div className="text-center mt-12">
-                        <p className="text-gray-900 font-bold text-xl mb-6">
-                            This is a premium, high-performance system — not a toy.
-                        </p>
-                        <a
+                    <ul className="text-gray-700 text-base sm:text-lg mb-8 space-y-2 list-disc list-inside">
+                        <li>Exactly which areas and projects match your criteria</li>
+                        <li>What the real numbers look like (not developer brochures—actual rental data)</li>
+                        <li>How the buying process works step-by-step for an Indian resident</li>
+                        <li>What paperwork you'll need and how long it takes</li>
+                    </ul>
+                </ScrollAnimate>
+
+                <ScrollAnimate delay={350}>
+                    <p className="text-gray-700 text-base sm:text-lg mb-6">
+                        By the end of 30 minutes, you'll have a clear picture. Not theory. A real plan.
+                    </p>
+                </ScrollAnimate>
+
+                <ScrollAnimate delay={400}>
+                    <p className="text-[#000000] font-bold text-lg sm:text-xl mb-8">
+                        If it makes sense, we move forward. If it doesn't, you'll know why—and you won't have wasted months figuring it out yourself.
+                    </p>
+                </ScrollAnimate>
+
+                {/* CTA Button */}
+                <ScrollAnimate delay={450}>
+                    <div className="text-center">
+                        <Link
                             href="#apply"
-                            className="inline-block bg-[#A60D60] hover:bg-[#A60D60]/90 text-white font-black py-4 px-12 rounded-full text-lg uppercase tracking-wide transition-all hover:shadow-[0_0_30px_rgba(166,13,96,0.4)]"
+                            className="inline-block bg-[#D4AF37] hover:bg-[#B8962E] text-[#000000] font-extrabold py-3 px-8 sm:py-4 sm:px-12 rounded-lg text-sm sm:text-base md:text-lg uppercase tracking-wide transition-all hover:shadow-[0_0_30px_rgba(201,162,39,0.4)]"
                         >
-                            Apply If You're Serious
-                        </a>
-                        <p className="text-sky-400 font-bold text-sm mt-4">
-                            HURRY! Only 4 onboarding slots left until December 2025.
-                        </p>
+                            LET'S BUILD YOUR PLAN
+                        </Link>
                     </div>
                 </ScrollAnimate>
             </div>

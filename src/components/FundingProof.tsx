@@ -1,101 +1,86 @@
 'use client';
 
-import Link from 'next/link';
 import ScrollAnimate from './ScrollAnimate';
 
 export default function FundingProof() {
     return (
-        <section className="relative bg-[#f5f5f5] pt-16 md:pt-24 pb-24 md:pb-32 overflow-hidden">
-            {/* Curved background effect */}
-            <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[200%] h-[600px] bg-[#eaeaea] rounded-[50%] -translate-y-1/2" />
-            </div>
-
-            <div className="relative max-w-3xl mx-auto px-4 md:px-6">
-                {/* Magenta Arrow Indicator */}
-                <div className="flex justify-center mb-8">
-                    <div className="flex items-center gap-1">
-                        <div className="w-8 h-0.5 bg-[#A60D60]" />
-                        <div className="w-0 h-0 border-t-[4px] border-t-transparent border-b-[4px] border-b-transparent border-l-[8px] border-l-[#A60D60]" />
-                    </div>
-                </div>
-
+        <section className="bg-[#f5f5f5] py-16 sm:py-20 lg:py-24">
+            <div className="max-w-4xl mx-auto px-4 md:px-8">
                 {/* Section Header */}
                 <ScrollAnimate>
-                    <div className="text-center mb-10">
-                        <h2
-                            className="text-2xl md:text-3xl lg:text-4xl font-black text-gray-900 leading-tight"
-                            style={{ fontFamily: '"Clash Display", sans-serif', fontStyle: 'italic', fontWeight: 900 }}
-                        >
-                            <strong><em>I've Helped UAE Traders<br />
-                            Access $30M+ In Capital<br />
-                            Using Disciplined, AI-Driven<br />
-                            Trading Strategies</em></strong>
-                        </h2>
+                    <h2
+                        className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-[#000000] mb-4 sm:mb-6"
+                        style={{ fontFamily: '"Clash Display", sans-serif' }}
+                    >
+                        THE MATH THAT ENDS THE DEBATE
+                    </h2>
+                </ScrollAnimate>
+
+                <ScrollAnimate delay={100}>
+                    <p className="text-[#000000] font-bold text-lg sm:text-xl mb-8">
+                        Stop thinking about this emotionally. Look at the numbers.
+                    </p>
+                </ScrollAnimate>
+
+                {/* Comparison Table */}
+                <ScrollAnimate delay={150}>
+                    <div className="overflow-x-auto mb-8 -mx-4 px-4 sm:mx-0 sm:px-0">
+                        <table className="w-full border-collapse min-w-[320px]">
+                            <thead>
+                                <tr className="bg-[#000000]">
+                                    <th className="py-3 px-2 sm:py-4 sm:px-4 text-left text-white font-bold text-sm sm:text-base md:text-lg"></th>
+                                    <th className="py-3 px-2 sm:py-4 sm:px-4 text-center text-white font-bold text-sm sm:text-base md:text-lg">MUMBAI</th>
+                                    <th className="py-3 px-2 sm:py-4 sm:px-4 text-center text-[#D4AF37] font-bold text-sm sm:text-base md:text-lg">DUBAI</th>
+                                </tr>
+                            </thead>
+                            <tbody className="bg-white">
+                                <tr className="border-b border-gray-200">
+                                    <td className="py-3 px-2 sm:py-4 sm:px-4 font-semibold text-gray-800 text-sm sm:text-base">Rental Yield</td>
+                                    <td className="py-3 px-2 sm:py-4 sm:px-4 text-center text-gray-600 text-sm sm:text-base">2-3%</td>
+                                    <td className="py-3 px-2 sm:py-4 sm:px-4 text-center text-[#D4AF37] font-bold text-sm sm:text-base">6-8%</td>
+                                </tr>
+                                <tr className="border-b border-gray-200">
+                                    <td className="py-3 px-2 sm:py-4 sm:px-4 font-semibold text-gray-800 text-sm sm:text-base">Income Tax on Rent</td>
+                                    <td className="py-3 px-2 sm:py-4 sm:px-4 text-center text-gray-600 text-sm sm:text-base">30%+</td>
+                                    <td className="py-3 px-2 sm:py-4 sm:px-4 text-center text-[#D4AF37] font-bold text-sm sm:text-base">0%</td>
+                                </tr>
+                                <tr className="border-b border-gray-200">
+                                    <td className="py-3 px-2 sm:py-4 sm:px-4 font-semibold text-gray-800 text-sm sm:text-base">Capital Gains Tax</td>
+                                    <td className="py-3 px-2 sm:py-4 sm:px-4 text-center text-gray-600 text-sm sm:text-base">12.5-20%</td>
+                                    <td className="py-3 px-2 sm:py-4 sm:px-4 text-center text-[#D4AF37] font-bold text-sm sm:text-base">0%</td>
+                                </tr>
+                                <tr className="border-b border-gray-200">
+                                    <td className="py-3 px-2 sm:py-4 sm:px-4 font-semibold text-gray-800 text-sm sm:text-base">Property Tax</td>
+                                    <td className="py-3 px-2 sm:py-4 sm:px-4 text-center text-gray-600 text-sm sm:text-base">Yes</td>
+                                    <td className="py-3 px-2 sm:py-4 sm:px-4 text-center text-[#D4AF37] font-bold text-sm sm:text-base">No</td>
+                                </tr>
+                                <tr>
+                                    <td className="py-3 px-2 sm:py-4 sm:px-4 font-semibold text-gray-800 text-sm sm:text-base">Currency Trend</td>
+                                    <td className="py-3 px-2 sm:py-4 sm:px-4 text-center text-gray-600 text-sm sm:text-base">Weakening</td>
+                                    <td className="py-3 px-2 sm:py-4 sm:px-4 text-center text-[#D4AF37] font-bold text-sm sm:text-base">Pegged to USD</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </ScrollAnimate>
 
-                {/* Content */}
-                <div className="max-w-2xl mx-auto mb-8 text-gray-700 font-semibold">
-                    <p className="mb-6 text-lg">
-                        I've spent years building, breaking, refining, and rebuilding automated systems through every kind of market condition imaginable.
+                {/* Comparison Example */}
+                <ScrollAnimate delay={200}>
+                    <div className="space-y-4 mb-6">
+                        <p className="text-gray-700 text-base sm:text-lg">
+                            A ₹2 crore apartment in Mumbai gives you ₹50,000/month rent—before tax.
+                        </p>
+                        <p className="text-[#000000] font-bold text-lg sm:text-xl">
+                            The same money in Dubai gives you ₹1,00,000+/month—tax-free. In dollars.
+                        </p>
+                    </div>
+                </ScrollAnimate>
+
+                <ScrollAnimate delay={250}>
+                    <p className="text-[#D4AF37] italic text-lg sm:text-xl font-semibold">
+                        This isn't opinion. It's arithmetic.
                     </p>
-
-                    <p className="mb-6 text-lg">
-                        My team and I engineered Quantum Algo so traders can finally experience:
-                    </p>
-
-                    <ul className="mb-6 text-lg space-y-2">
-                        <li className="flex items-start gap-2">
-                            <span className="text-[#A60D60] font-bold">•</span>
-                            <span>Controlled drawdowns</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                            <span className="text-[#A60D60] font-bold">•</span>
-                            <span>Consistent execution</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                            <span className="text-[#A60D60] font-bold">•</span>
-                            <span>A stable equity curve that doesn't depend on luck or emotion</span>
-                        </li>
-                    </ul>
-
-                    <p className="mb-6 text-lg">
-                        Together, these systems have helped traders:
-                    </p>
-
-                    <ul className="mb-6 text-lg space-y-2">
-                        <li className="flex items-start gap-2">
-                            <span className="text-[#A60D60] font-bold">•</span>
-                            <span><span className="bg-[#E8D4F0] px-1 font-bold">Manage tens of millions</span> across live and funded accounts</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                            <span className="text-[#A60D60] font-bold">•</span>
-                            <span>Build <span className="bg-[#E8D4F0] px-1 font-bold">six-figure withdrawals</span> over time</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                            <span className="text-[#A60D60] font-bold">•</span>
-                            <span>Trade with discipline instead of chaos</span>
-                        </li>
-                    </ul>
-
-                    <p className="text-lg font-bold text-[#A60D60]">
-                        Ready to step up and trade with the confidence of AI-driven precision?
-                    </p>
-                </div>
-
-                {/* CTA Button - Positioned to overlap next section */}
-                <div className="max-w-2xl mx-auto relative z-10 translate-y-1/2">
-                    <Link
-                        href="#apply"
-                        className="block w-full bg-[#A60D60] hover:bg-[#A60D60]/90 text-white font-extrabold py-5 rounded-full text-lg md:text-xl uppercase tracking-wide text-center transition-all hover:shadow-[0_0_30px_rgba(166,13,96,0.4)]"
-                    >
-                        Apply Now
-                    </Link>
-                    <p className="text-sky-400 font-bold text-sm text-center mt-4 bg-[#f5f5f5] py-2">
-                        HURRY! Only 4 onboarding slots left until December 2025.
-                    </p>
-                </div>
+                </ScrollAnimate>
             </div>
         </section>
     );

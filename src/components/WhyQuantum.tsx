@@ -56,26 +56,26 @@ const benefits = [
 
 export default function WhyQuantum() {
     return (
-        <section className="relative py-20 md:py-32 bg-[#0a0a0a] overflow-hidden">
+        <section className="relative py-20 md:py-32 bg-white overflow-hidden">
             {/* Background effects */}
             <div className="absolute inset-0">
-                <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-[#00FF00]/5 rounded-full blur-[120px] pointer-events-none" />
-                <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-[#00FF00]/5 rounded-full blur-[120px] pointer-events-none" />
+                <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-[#1B1B59]/5 rounded-full blur-[120px] pointer-events-none" />
+                <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-[#1B1B59]/5 rounded-full blur-[120px] pointer-events-none" />
                 <div className="absolute inset-0 bg-[linear-gradient(rgba(0,255,0,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(0,255,0,0.02)_1px,transparent_1px)] bg-[size:50px_50px]" />
             </div>
 
             <div className="relative max-w-7xl mx-auto px-4 md:px-6">
                 {/* Header */}
                 <div className="text-center mb-16 max-w-4xl mx-auto">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#00FF00]/30 bg-[#00FF00]/5 backdrop-blur-sm mb-6">
-                        <Bot className="w-4 h-4 text-[#00FF00]" />
-                        <span className="text-sm font-bold text-[#00FF00] tracking-wide uppercase">
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#1B1B59]/30 bg-[#1B1B59]/5 backdrop-blur-sm mb-6">
+                        <Bot className="w-4 h-4 text-[#1B1B59]" />
+                        <span className="text-sm font-bold text-[#1B1B59] tracking-wide uppercase">
                             Complete Trading System
                         </span>
                     </div>
-                    <h2 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tight leading-tight">
+                    <h2 className="text-4xl md:text-6xl font-black text-[#1B1B59] mb-6 tracking-tight leading-tight">
                         Why This Forex{' '}
-                        <span className="text-[#00FF00] text-glow">
+                        <span className="text-[#1B1B59] text-glow">
                             'Swiss Army Knife'
                         </span>
                         {' '}Is The ONLY System You'll Ever Need
@@ -91,20 +91,20 @@ export default function WhyQuantum() {
                     {benefits.map((benefit, index) => (
                         <div
                             key={index}
-                            className="group relative bg-[#111] border border-[#00FF00]/20 rounded-2xl p-6 hover:border-[#00FF00]/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,0,0.1)]"
+                            className="group relative bg-[#f9f9f9] border border-[#1B1B59]/20 rounded-2xl p-6 hover:border-[#1B1B59]/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,0,0.1)]"
                         >
                             {/* Badge */}
-                            <div className="absolute -top-3 -right-3 px-3 py-1 rounded-full bg-[#00FF00] text-xs font-black text-black shadow-lg">
+                            <div className="absolute -top-3 -right-3 px-3 py-1 rounded-full bg-[#1B1B59] text-xs font-black text-black shadow-lg">
                                 {benefit.badge}
                             </div>
 
                             {/* Icon */}
-                            <div className="w-14 h-14 rounded-xl bg-[#00FF00]/20 border border-[#00FF00]/30 flex items-center justify-center text-[#00FF00] mb-4 group-hover:bg-[#00FF00] group-hover:text-black transition-all">
+                            <div className="w-14 h-14 rounded-xl bg-[#1B1B59]/20 border border-[#1B1B59]/30 flex items-center justify-center text-[#1B1B59] mb-4 group-hover:bg-[#1B1B59] group-hover:text-black transition-all">
                                 {benefit.icon}
                             </div>
 
                             {/* Content */}
-                            <h3 className="text-lg font-bold text-white mb-3 group-hover:text-[#00FF00] transition-all">
+                            <h3 className="text-lg font-bold text-[#1B1B59] mb-3 group-hover:text-[#1B1B59] transition-all">
                                 {benefit.title}
                             </h3>
                             <p className="text-sm text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors">
@@ -116,15 +116,15 @@ export default function WhyQuantum() {
 
                 {/* Call-out Box */}
                 <div className="max-w-5xl mx-auto">
-                    <div className="relative bg-[#111] border-2 border-[#00FF00]/30 rounded-3xl p-8 md:p-12">
-                        <div className="absolute inset-0 bg-[#00FF00]/5 rounded-3xl blur-2xl" />
+                    <div className="relative bg-[#f9f9f9] border-2 border-[#1B1B59]/30 rounded-3xl p-8 md:p-12">
+                        <div className="absolute inset-0 bg-[#1B1B59]/5 rounded-3xl blur-2xl" />
 
                         <div className="relative text-center">
-                            <h3 className="text-3xl md:text-4xl font-black text-white mb-6 leading-tight">
+                            <h3 className="text-3xl md:text-4xl font-black text-[#1B1B59] mb-6 leading-tight">
                                 POW is an incredibly powerful tool...
                             </h3>
                             <p className="text-xl text-gray-300 mb-6 leading-relaxed">
-                                But only if you know how to use it. Having a tool is one thing - <span className="text-[#00FF00] font-bold">having the skills is another</span>.
+                                But only if you know how to use it. Having a tool is one thing - <span className="text-[#1B1B59] font-bold">having the skills is another</span>.
                             </p>
                             <p className="text-lg text-gray-400 mb-8">
                                 We give you industry-leading guidance, support, and training materials to master the markets
@@ -133,28 +133,28 @@ export default function WhyQuantum() {
 
                             <Link
                                 href="#apply"
-                                className="inline-flex items-center gap-3 px-10 py-5 text-xl font-black text-black rounded-full bg-[#00FF00] hover:scale-105 transition-all hover:shadow-[0_0_40px_rgba(0,255,0,0.5)]"
+                                className="inline-flex items-center gap-3 px-10 py-5 text-xl font-black text-black rounded-full bg-[#1B1B59] hover:scale-105 transition-all hover:shadow-[0_0_40px_rgba(0,255,0,0.5)]"
                             >
                                 <span>GET STARTED NOW</span>
                                 <TrendingUp className="w-6 h-6" />
                             </Link>
 
                             {/* Mini Stats */}
-                            <div className="grid grid-cols-3 gap-6 mt-12 pt-12 border-t border-[#00FF00]/20">
+                            <div className="grid grid-cols-3 gap-6 mt-12 pt-12 border-t border-[#1B1B59]/20">
                                 <div>
-                                    <div className="text-3xl font-black text-[#00FF00] mb-2">
+                                    <div className="text-3xl font-black text-[#1B1B59] mb-2">
                                         $200M+
                                     </div>
                                     <div className="text-sm text-gray-500 font-medium">Funding Secured</div>
                                 </div>
                                 <div>
-                                    <div className="text-3xl font-black text-[#00FF00] mb-2">
+                                    <div className="text-3xl font-black text-[#1B1B59] mb-2">
                                         2-4%
                                     </div>
                                     <div className="text-sm text-gray-500 font-medium">Monthly Returns</div>
                                 </div>
                                 <div>
-                                    <div className="text-3xl font-black text-[#00FF00] mb-2">
+                                    <div className="text-3xl font-black text-[#1B1B59] mb-2">
                                         1-8%
                                     </div>
                                     <div className="text-sm text-gray-500 font-medium">Max Drawdown</div>

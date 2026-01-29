@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Montserrat, Merriweather } from "next/font/google";
 import "./globals.css";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["300", "400", "500", "600", "700", "800"],
   variable: "--font-montserrat",
+});
+
+const merriweather = Merriweather({
+  subsets: ["latin"],
+  weight: ["300", "400", "700", "900"],
+  variable: "--font-merriweather",
 });
 
 export const metadata: Metadata = {
@@ -101,7 +107,7 @@ export default function RootLayout({
         <link rel="icon" href="/QA logo.png" />
         <link rel="apple-touch-icon" href="/QA logo.png" />
       </head>
-      <body className={`${montserrat.className} antialiased`}>{children}</body>
+      <body className={`${montserrat.className} ${merriweather.variable} antialiased`}>{children}</body>
     </html>
   );
 }

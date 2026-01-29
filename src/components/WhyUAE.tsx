@@ -4,71 +4,39 @@ import ScrollAnimate from './ScrollAnimate';
 
 export default function WhyUAE() {
     return (
-        <section className="bg-[#2B2265] pt-16 md:pt-24 pb-0">
-            <div className="max-w-4xl mx-auto px-4 md:px-6">
+        <section className="bg-[#f5f5f5] py-16 sm:py-20 lg:py-24">
+            <div className="max-w-4xl mx-auto px-4 md:px-8">
                 {/* Section Header */}
                 <ScrollAnimate>
-                    <div className="text-center mb-12">
-                        <h2
-                            className="text-2xl md:text-4xl lg:text-5xl font-black text-white leading-tight mb-4"
-                            style={{ fontFamily: '"Clash Display", sans-serif', fontStyle: 'italic', fontWeight: 900 }}
-                        >
-                            <em>Why UAE Traders Love Quantum Algo</em>
-                        </h2>
-                        <p className="text-gray-300 font-semibold text-lg">
-                            Because the UAE trading environment is unique:
-                        </p>
-                    </div>
+                    <h2
+                        className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-[#000000] mb-6 sm:mb-8"
+                        style={{ fontFamily: '"Clash Display", sans-serif' }}
+                    >
+                        WHY THE WINDOW IS NOW
+                    </h2>
                 </ScrollAnimate>
 
-                {/* Benefits Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-                    <ScrollAnimate delay={100}>
-                        <div className="bg-white/10 rounded-xl p-6">
-                            <div className="flex items-center gap-3 mb-2">
-                                <span className="text-[#A60D60] text-2xl">✓</span>
-                                <h3 className="text-white font-bold text-lg">Legalized forex environment</h3>
-                            </div>
-                        </div>
-                    </ScrollAnimate>
+                <ScrollAnimate delay={100}>
+                    <ul className="text-gray-700 text-base sm:text-lg mb-8 space-y-3 list-disc list-inside">
+                        <li>Dubai's population: growing 4-5% per year</li>
+                        <li>New supply: not keeping pace</li>
+                        <li>Off-plan projects: selling out in 48 hours</li>
+                        <li>Developer payment plans: 60/40, 70/30, some with post-handover options</li>
+                        <li>The Indian rupee: weaker this year than last. Weaker last year than before.</li>
+                    </ul>
+                </ScrollAnimate>
 
-                    <ScrollAnimate delay={150}>
-                        <div className="bg-white/10 rounded-xl p-6">
-                            <div className="flex items-center gap-3 mb-2">
-                                <span className="text-[#A60D60] text-2xl">✓</span>
-                                <h3 className="text-white font-bold text-lg">Massive $9.4 trillion daily trading volume</h3>
-                            </div>
-                        </div>
-                    </ScrollAnimate>
+                <ScrollAnimate delay={150}>
+                    <p className="text-gray-700 text-base sm:text-lg mb-6">
+                        Every quarter you delay, you need more rupees to buy the same property. That's not a scare tactic. That's the exchange rate chart.
+                    </p>
+                </ScrollAnimate>
 
-                    <ScrollAnimate delay={200}>
-                        <div className="bg-white/10 rounded-xl p-6">
-                            <div className="flex items-center gap-3 mb-2">
-                                <span className="text-[#A60D60] text-2xl">✓</span>
-                                <h3 className="text-white font-bold text-lg">99% of top global forex brokers operate from the UAE</h3>
-                            </div>
-                        </div>
-                    </ScrollAnimate>
-
-                    <ScrollAnimate delay={250}>
-                        <div className="bg-white/10 rounded-xl p-6">
-                            <div className="flex items-center gap-3 mb-2">
-                                <span className="text-[#A60D60] text-2xl">✓</span>
-                                <h3 className="text-white font-bold text-lg">Indian, Pakistani & Arab traders make up a massive pro-trading community</h3>
-                            </div>
-                        </div>
-                    </ScrollAnimate>
-
-                    <ScrollAnimate delay={300}>
-                        <div className="bg-white/10 rounded-xl p-6 md:col-span-2">
-                            <div className="flex items-center gap-3 mb-2">
-                                <span className="text-[#A60D60] text-2xl">✓</span>
-                                <h3 className="text-white font-bold text-lg">UAE traders value transparency, automation, and steady monthly returns</h3>
-                            </div>
-                        </div>
-                    </ScrollAnimate>
-                </div>
-
+                <ScrollAnimate delay={200}>
+                    <p className="text-[#000000] font-bold text-lg sm:text-xl">
+                        The people who bought in 2021 and 2022 are sitting on 25-40% appreciation. They didn't time the market. They just made the decision.
+                    </p>
+                </ScrollAnimate>
             </div>
         </section>
     );

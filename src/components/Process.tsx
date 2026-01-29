@@ -20,7 +20,7 @@ export default function Process() {
                 {/* Step 1 */}
                 <div className="bg-white rounded-xl border border-gray-200 p-6 mb-6">
                     <div className="flex items-start gap-4">
-                        <div className="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
+                        <div className="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center text-[#1B1B59] font-bold flex-shrink-0">
                             1
                         </div>
                         <div>
@@ -32,7 +32,7 @@ export default function Process() {
                             {/* Image */}
                             <div className="image-container mb-4">
                                 <div className="aspect-video bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center">
-                                    <div className="text-center text-white">
+                                    <div className="text-center text-[#1B1B59]">
                                         <div className="text-5xl mb-3">💼</div>
                                         <p className="text-lg font-semibold">Prop Firm Dashboard</p>
                                     </div>
@@ -57,7 +57,7 @@ export default function Process() {
                 {/* Step 2 */}
                 <div className="bg-white rounded-xl border border-gray-200 p-6 mb-6">
                     <div className="flex items-start gap-4">
-                        <div className="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
+                        <div className="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center text-[#1B1B59] font-bold flex-shrink-0">
                             2
                         </div>
                         <div>
@@ -69,7 +69,7 @@ export default function Process() {
                             {/* Image */}
                             <div className="image-container mb-4">
                                 <div className="aspect-video bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center">
-                                    <div className="text-center text-white">
+                                    <div className="text-center text-[#1B1B59]">
                                         <div className="text-5xl mb-3">📊</div>
                                         <p className="text-lg font-semibold">Portfolio Builder Software</p>
                                     </div>
@@ -94,7 +94,7 @@ export default function Process() {
                 {/* Step 3 */}
                 <div className="bg-white rounded-xl border border-gray-200 p-6 mb-8">
                     <div className="flex items-start gap-4">
-                        <div className="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
+                        <div className="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center text-[#1B1B59] font-bold flex-shrink-0">
                             3
                         </div>
                         <div>
@@ -106,7 +106,7 @@ export default function Process() {
                             {/* Image */}
                             <div className="image-container mb-4">
                                 <div className="aspect-video bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
-                                    <div className="text-center text-white">
+                                    <div className="text-center text-[#1B1B59]">
                                         <div className="text-5xl mb-3">🚀</div>
                                         <p className="text-lg font-semibold">Growth Trajectory</p>
                                     </div>
@@ -140,7 +140,7 @@ export default function Process() {
                 <div className="text-center">
                     <Link
                         href="#apply"
-                        className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-8 py-4 rounded-lg transition-all text-lg"
+                        className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-[#1B1B59] font-bold px-8 py-4 rounded-lg transition-all text-lg"
                     >
                         Start Your Journey
                         <ArrowRight className="w-5 h-5" />

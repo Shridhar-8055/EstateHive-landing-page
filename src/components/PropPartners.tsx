@@ -13,11 +13,11 @@ const partners = [
 
 export default function PropPartners() {
     return (
-        <section className="bg-[#0a0a0a] py-16 md:py-20 border-t border-[#00FF00]/10">
+        <section className="bg-[#f9f9f9] py-16 md:py-20 border-t border-[#1B1B59]/10">
             <div className="max-w-5xl mx-auto px-4 md:px-6">
                 {/* Section Header */}
-                <h2 className="text-2xl md:text-3xl font-black text-white text-center mb-4">
-                    Our EA Has Secured <span className="text-[#00FF00]">$54,000,000+</span> In Funding From The World's Top Prop Firms
+                <h2 className="text-2xl md:text-3xl font-black text-[#1B1B59] text-center mb-4">
+                    Our EA Has Secured <span className="text-[#1B1B59]">$54,000,000+</span> In Funding From The World's Top Prop Firms
                 </h2>
                 <p className="text-gray-400 text-center mb-12">
                     We work with all major prop firms to get you funded faster.
@@ -28,9 +28,9 @@ export default function PropPartners() {
                     {partners.map((partner, index) => (
                         <div
                             key={index}
-                            className="bg-[#111] border border-[#222] rounded-xl p-6 flex items-center justify-center hover:border-[#00FF00]/30 transition-colors"
+                            className="bg-white border border-[#222] rounded-xl p-6 flex items-center justify-center hover:border-[#1B1B59]/30 transition-colors"
                         >
-                            <span className="text-white font-bold text-sm text-center">{partner}</span>
+                            <span className="text-[#1B1B59] font-bold text-sm text-center">{partner}</span>
                         </div>
                     ))}
                 </div>

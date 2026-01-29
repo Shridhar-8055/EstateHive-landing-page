@@ -16,7 +16,7 @@ export default function SuccessStories() {
                         >
                             <strong><em>Real Payouts and Success Stories</em></strong>
                         </h2>
-                        <p className="text-[#A60D60] font-bold text-lg md:text-xl">
+                        <p className="text-[#F44336] font-bold text-lg md:text-xl">
                             Direct From Our UAE Traders
                         </p>
                         <p className="text-gray-600 font-semibold mt-4 max-w-2xl mx-auto">
@@ -42,7 +42,7 @@ export default function SuccessStories() {
                                 </div>
                             </div>
                             <p className="text-gray-800 font-semibold leading-relaxed">
-                                "Good end to the week—Profit Split received! <span className="text-[#A60D60] font-bold">$1,574.03</span> auto-traded by Quantum Algo."
+                                "Good end to the week—Profit Split received! <span className="text-[#F44336] font-bold">$1,574.03</span> auto-traded by Quantum Algo."
                             </p>
                         </div>
                     </ScrollAnimate>
@@ -62,7 +62,7 @@ export default function SuccessStories() {
                                 </div>
                             </div>
                             <p className="text-gray-800 font-semibold leading-relaxed">
-                                "Passed the funding challenge using the EA. <span className="text-[#A60D60] font-bold">$364.36</span> profit this round—on to the next."
+                                "Passed the funding challenge using the EA. <span className="text-[#F44336] font-bold">$364.36</span> profit this round—on to the next."
                             </p>
                         </div>
                     </ScrollAnimate>
@@ -82,7 +82,7 @@ export default function SuccessStories() {
                                 </div>
                             </div>
                             <p className="text-gray-800 font-semibold leading-relaxed">
-                                "$50K secured away with Quantum Algo AI. <span className="text-[#A60D60] font-bold">$50,800.00</span> now sitting funded."
+                                "$50K secured away with Quantum Algo AI. <span className="text-[#F44336] font-bold">$50,800.00</span> now sitting funded."
                             </p>
                         </div>
                     </ScrollAnimate>
@@ -114,7 +114,7 @@ export default function SuccessStories() {
                         <p className="text-gray-800 font-semibold text-lg leading-relaxed max-w-2xl mx-auto">
                             Swipe through dozens of verified payout, certificate, and account images from the UAE's top trading community.
                         </p>
-                        <p className="text-[#A60D60] font-bold text-lg mt-4">
+                        <p className="text-[#F44336] font-bold text-lg mt-4">
                             No more hypothetical claims, marketing hype, or cherry-picked results.
                         </p>
                         <p className="text-gray-900 font-black text-xl mt-2">
@@ -125,27 +125,27 @@ export default function SuccessStories() {
             </div>
 
             {/* Marquee Section */}
-            <div className="bg-[#A60D60] border-y-4 border-[#A60D60] py-3 sm:py-4 overflow-hidden">
+            <div className="bg-[#F44336] border-y-4 border-[#F44336] py-3 sm:py-4 overflow-hidden">
                 <div className="flex animate-marquee whitespace-nowrap">
                     {[...Array(4)].map((_, i) => (
                         <div key={i} className="flex items-center shrink-0">
                             <img src="/654bc818ced0f694add96fb4_Vector.svg" alt="" className="w-6 h-6 sm:w-8 sm:h-8 ml-3 sm:ml-4 mr-1 shrink-0 brightness-0 invert" />
-                            <span className="text-white font-bold text-sm sm:text-xl whitespace-nowrap">DIGITAL JOURNAL</span>
+                            <span className="text-[#1B1B59] font-bold text-sm sm:text-xl whitespace-nowrap">DIGITAL JOURNAL</span>
 
                             <img src="/654bc818ced0f694add96fb4_Vector.svg" alt="" className="w-6 h-6 sm:w-8 sm:h-8 ml-3 sm:ml-4 mr-1 shrink-0 brightness-0 invert" />
-                            <span className="text-white font-bold text-sm sm:text-xl whitespace-nowrap">$54M Funded</span>
+                            <span className="text-[#1B1B59] font-bold text-sm sm:text-xl whitespace-nowrap">$54M Funded</span>
 
                             <img src="/654bc818ced0f694add96fb4_Vector.svg" alt="" className="w-6 h-6 sm:w-8 sm:h-8 ml-3 sm:ml-4 mr-1 shrink-0 brightness-0 invert" />
-                            <span className="text-white font-bold text-sm sm:text-xl whitespace-nowrap">MarketWatch</span>
+                            <span className="text-[#1B1B59] font-bold text-sm sm:text-xl whitespace-nowrap">MarketWatch</span>
 
                             <img src="/654bc818ced0f694add96fb4_Vector.svg" alt="" className="w-6 h-6 sm:w-8 sm:h-8 ml-3 sm:ml-4 mr-1 shrink-0 brightness-0 invert" />
-                            <span className="text-white font-bold text-sm sm:text-xl whitespace-nowrap">1-5% Drawdowns Low Risk</span>
+                            <span className="text-[#1B1B59] font-bold text-sm sm:text-xl whitespace-nowrap">1-5% Drawdowns Low Risk</span>
 
                             <img src="/654bc818ced0f694add96fb4_Vector.svg" alt="" className="w-6 h-6 sm:w-8 sm:h-8 ml-3 sm:ml-4 mr-1 shrink-0 brightness-0 invert" />
-                            <span className="text-white font-bold text-sm sm:text-xl whitespace-nowrap">FOX 28</span>
+                            <span className="text-[#1B1B59] font-bold text-sm sm:text-xl whitespace-nowrap">FOX 28</span>
 
                             <img src="/654bc818ced0f694add96fb4_Vector.svg" alt="" className="w-6 h-6 sm:w-8 sm:h-8 ml-3 sm:ml-4 mr-1 shrink-0 brightness-0 invert" />
-                            <span className="text-white font-bold text-sm sm:text-xl whitespace-nowrap">100% Of Profits, No Profit Share To Us</span>
+                            <span className="text-[#1B1B59] font-bold text-sm sm:text-xl whitespace-nowrap">100% Of Profits, No Profit Share To Us</span>
                         </div>
                     ))}
                 </div>
