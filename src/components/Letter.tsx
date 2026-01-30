@@ -7,27 +7,27 @@ export default function Letter() {
         <>
             {/* Developer Logos Section */}
             <section className="bg-white py-8 sm:py-12">
-                <div className="max-w-6xl mx-auto px-4 sm:px-8">
-                    <div className="flex items-center justify-center gap-4 xs:gap-5 sm:gap-10 md:gap-14 lg:gap-20 flex-wrap sm:flex-nowrap">
+                <div className="max-w-6xl mx-auto px-3 sm:px-8">
+                    <div className="flex items-center justify-between sm:justify-center gap-2 sm:gap-10 md:gap-14 lg:gap-20">
                         <img
                             src="/fav emaar.png"
                             alt="EMAAR"
-                            className="h-[16px] xs:h-[18px] sm:h-[32px] md:h-[40px] lg:h-[48px] w-auto object-contain max-w-[60px] sm:max-w-none"
+                            className="h-[14px] sm:h-[32px] md:h-[40px] lg:h-[48px] w-auto object-contain flex-shrink-0"
                         />
                         <img
                             src="/favdamac.png"
                             alt="DAMAC"
-                            className="h-[16px] xs:h-[18px] sm:h-[32px] md:h-[40px] lg:h-[48px] w-auto object-contain max-w-[60px] sm:max-w-none"
+                            className="h-[14px] sm:h-[32px] md:h-[40px] lg:h-[48px] w-auto object-contain flex-shrink-0"
                         />
                         <img
                             src="/fav binghatti.png"
                             alt="BINGHATTI"
-                            className="h-[16px] xs:h-[18px] sm:h-[32px] md:h-[40px] lg:h-[48px] w-auto object-contain max-w-[60px] sm:max-w-none"
+                            className="h-[14px] sm:h-[32px] md:h-[40px] lg:h-[48px] w-auto object-contain flex-shrink-0"
                         />
                         <img
                             src="/fav imtiaz.png"
                             alt="IMTIAZ"
-                            className="h-[16px] xs:h-[18px] sm:h-[32px] md:h-[40px] lg:h-[48px] w-auto object-contain max-w-[60px] sm:max-w-none"
+                            className="h-[14px] sm:h-[32px] md:h-[40px] lg:h-[48px] w-auto object-contain flex-shrink-0"
                         />
                     </div>
                 </div>
