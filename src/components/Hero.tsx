@@ -39,11 +39,11 @@ export default function Hero() {
                     {/* Main Headline */}
                     <ScrollAnimate delay={100}>
                         <h1
-                            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-[1.4] sm:leading-[1.3] mb-6 sm:mb-8 px-2"
+                            className="text-[15px] sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-[1.4] sm:leading-[1.3] mb-6 sm:mb-8 px-2"
                             style={{ fontFamily: '"Clash Display", sans-serif' }}
                         >
-                            <span className="block lg:whitespace-nowrap">You're Not Here to Learn About Dubai.</span>
-                            <span className="block lg:whitespace-nowrap text-[#D4AF37]">You're Here Because You Already Know.</span>
+                            <span className="block whitespace-nowrap sm:whitespace-normal lg:whitespace-nowrap">You're Not Here to Learn About Dubai.</span>
+                            <span className="block whitespace-nowrap sm:whitespace-normal lg:whitespace-nowrap text-[#D4AF37]">You're Here Because You Already Know.</span>
                         </h1>
                     </ScrollAnimate>
 
