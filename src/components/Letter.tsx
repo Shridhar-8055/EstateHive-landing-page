@@ -6,32 +6,28 @@ export default function Letter() {
     return (
         <>
             {/* Developer Logos Section */}
-            <section className="bg-white py-10 sm:py-12">
-                <div className="max-w-6xl mx-auto px-4 md:px-8">
-                    <div className="flex items-center justify-center gap-6 sm:gap-10 md:gap-14 lg:gap-20">
+            <section className="bg-white py-8 sm:py-12">
+                <div className="max-w-6xl mx-auto px-4 sm:px-8">
+                    <div className="flex items-center justify-center gap-4 xs:gap-5 sm:gap-10 md:gap-14 lg:gap-20 flex-wrap sm:flex-nowrap">
                         <img
                             src="/fav emaar.png"
                             alt="EMAAR"
-                            style={{ height: '24px', width: 'auto' }}
-                            className="sm:!h-[32px] md:!h-[40px] lg:!h-[48px] object-contain"
+                            className="h-[16px] xs:h-[18px] sm:h-[32px] md:h-[40px] lg:h-[48px] w-auto object-contain max-w-[60px] sm:max-w-none"
                         />
                         <img
                             src="/favdamac.png"
                             alt="DAMAC"
-                            style={{ height: '24px', width: 'auto' }}
-                            className="sm:!h-[32px] md:!h-[40px] lg:!h-[48px] object-contain"
+                            className="h-[16px] xs:h-[18px] sm:h-[32px] md:h-[40px] lg:h-[48px] w-auto object-contain max-w-[60px] sm:max-w-none"
                         />
                         <img
                             src="/fav binghatti.png"
                             alt="BINGHATTI"
-                            style={{ height: '24px', width: 'auto' }}
-                            className="sm:!h-[32px] md:!h-[40px] lg:!h-[48px] object-contain"
+                            className="h-[16px] xs:h-[18px] sm:h-[32px] md:h-[40px] lg:h-[48px] w-auto object-contain max-w-[60px] sm:max-w-none"
                         />
                         <img
                             src="/fav imtiaz.png"
                             alt="IMTIAZ"
-                            style={{ height: '24px', width: 'auto' }}
-                            className="sm:!h-[32px] md:!h-[40px] lg:!h-[48px] object-contain"
+                            className="h-[16px] xs:h-[18px] sm:h-[32px] md:h-[40px] lg:h-[48px] w-auto object-contain max-w-[60px] sm:max-w-none"
                         />
                     </div>
                 </div>
