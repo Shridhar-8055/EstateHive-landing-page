@@ -6,28 +6,32 @@ export default function Letter() {
     return (
         <>
             {/* Developer Logos Section */}
-            <section className="bg-white py-6 sm:py-12">
-                <div className="w-full px-4 sm:px-8 sm:max-w-6xl sm:mx-auto">
+            <section className="bg-white py-6 sm:py-12 overflow-hidden">
+                <div className="w-full max-w-6xl mx-auto px-4 sm:px-8">
                     <div className="flex items-center justify-evenly sm:justify-center sm:gap-10 md:gap-14 lg:gap-20">
                         <img
                             src="/fav emaar.png"
                             alt="EMAAR"
-                            className="h-[12px] sm:h-[32px] md:h-[40px] lg:h-[48px] w-auto object-contain"
+                            style={{ height: '20px', width: 'auto' }}
+                            className="sm:!h-[32px] md:!h-[40px] lg:!h-[48px] object-contain max-w-[70px] sm:max-w-none"
                         />
                         <img
                             src="/favdamac.png"
                             alt="DAMAC"
-                            className="h-[12px] sm:h-[32px] md:h-[40px] lg:h-[48px] w-auto object-contain"
+                            style={{ height: '20px', width: 'auto' }}
+                            className="sm:!h-[32px] md:!h-[40px] lg:!h-[48px] object-contain max-w-[70px] sm:max-w-none"
                         />
                         <img
                             src="/fav binghatti.png"
                             alt="BINGHATTI"
-                            className="h-[12px] sm:h-[32px] md:h-[40px] lg:h-[48px] w-auto object-contain"
+                            style={{ height: '20px', width: 'auto' }}
+                            className="sm:!h-[32px] md:!h-[40px] lg:!h-[48px] object-contain max-w-[70px] sm:max-w-none"
                         />
                         <img
                             src="/fav imtiaz.png"
                             alt="IMTIAZ"
-                            className="h-[12px] sm:h-[32px] md:h-[40px] lg:h-[48px] w-auto object-contain"
+                            style={{ height: '20px', width: 'auto' }}
+                            className="sm:!h-[32px] md:!h-[40px] lg:!h-[48px] object-contain max-w-[70px] sm:max-w-none"
                         />
                     </div>
                 </div>
