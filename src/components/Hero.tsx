@@ -25,10 +25,10 @@ export default function Hero() {
                     </div>
 
                     {/* Book Now Button */}
-                    <div className="flex items-center">
+                    <div className="flex items-center h-[32px] sm:h-auto">
                         <Link
                             href="#apply"
-                            className="bg-[#D4AF37] hover:bg-[#B8962E] hover:scale-105 text-[#000000] font-bold py-2.5 px-6 sm:px-8 rounded-full text-sm uppercase tracking-wide transition-all duration-300 shadow-lg hover:shadow-[0_0_20px_rgba(0,206,209,0.5)]"
+                            className="bg-[#D4AF37] hover:bg-[#B8962E] hover:scale-105 text-[#000000] font-bold py-[5px] px-2.5 sm:py-2.5 sm:px-8 rounded-full text-[11px] sm:text-sm uppercase tracking-normal sm:tracking-wide transition-all duration-300 shadow-lg hover:shadow-[0_0_20px_rgba(0,206,209,0.5)] flex items-center"
                         >
                             BOOK CALL
                         </Link>
