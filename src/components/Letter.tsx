@@ -6,28 +6,28 @@ export default function Letter() {
     return (
         <>
             {/* Developer Logos Section */}
-            <section className="bg-white py-8 sm:py-12">
-                <div className="max-w-6xl mx-auto px-3 sm:px-8">
-                    <div className="flex items-center justify-between sm:justify-center gap-2 sm:gap-10 md:gap-14 lg:gap-20">
+            <section className="bg-white py-6 sm:py-12">
+                <div className="w-full px-4 sm:px-8 sm:max-w-6xl sm:mx-auto">
+                    <div className="flex items-center justify-evenly sm:justify-center sm:gap-10 md:gap-14 lg:gap-20">
                         <img
                             src="/fav emaar.png"
                             alt="EMAAR"
-                            className="h-[14px] sm:h-[32px] md:h-[40px] lg:h-[48px] w-auto object-contain flex-shrink-0"
+                            className="h-[12px] sm:h-[32px] md:h-[40px] lg:h-[48px] w-auto object-contain"
                         />
                         <img
                             src="/favdamac.png"
                             alt="DAMAC"
-                            className="h-[14px] sm:h-[32px] md:h-[40px] lg:h-[48px] w-auto object-contain flex-shrink-0"
+                            className="h-[12px] sm:h-[32px] md:h-[40px] lg:h-[48px] w-auto object-contain"
                         />
                         <img
                             src="/fav binghatti.png"
                             alt="BINGHATTI"
-                            className="h-[14px] sm:h-[32px] md:h-[40px] lg:h-[48px] w-auto object-contain flex-shrink-0"
+                            className="h-[12px] sm:h-[32px] md:h-[40px] lg:h-[48px] w-auto object-contain"
                         />
                         <img
                             src="/fav imtiaz.png"
                             alt="IMTIAZ"
-                            className="h-[14px] sm:h-[32px] md:h-[40px] lg:h-[48px] w-auto object-contain flex-shrink-0"
+                            className="h-[12px] sm:h-[32px] md:h-[40px] lg:h-[48px] w-auto object-contain"
                         />
                     </div>
                 </div>
