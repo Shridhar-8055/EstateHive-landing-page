@@ -132,7 +132,7 @@ export default function WhyQuantum() {
                             </p>
 
                             <Link
-                                href="#apply"
+                                href="#contact"
                                 className="inline-flex items-center gap-3 px-10 py-5 text-xl font-black text-black rounded-full bg-[#1B1B59] hover:scale-105 transition-all hover:shadow-[0_0_40px_rgba(0,255,0,0.5)]"
                             >
                                 <span>GET STARTED NOW</span>

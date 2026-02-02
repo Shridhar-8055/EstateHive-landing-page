@@ -192,7 +192,7 @@ export default function Testimonials() {
                 {/* CTA Button */}
                 <div className="text-center mt-10">
                     <a
-                        href="#apply"
+                        href="#contact"
                         className="inline-block bg-[#F44336] hover:bg-[#F44336]/90 text-[#1B1B59] font-black py-4 px-12 rounded-full text-lg uppercase tracking-wide transition-all hover:shadow-[0_0_30px_rgba(166,13,96,0.4)]"
                     >
                         Join Traders Getting These Results

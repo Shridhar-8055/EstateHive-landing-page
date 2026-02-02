@@ -88,7 +88,7 @@ export default function CapitalComparison() {
                 {/* CTA */}
                 <div className="text-center">
                     <Link
-                        href="#apply"
+                        href="#contact"
                         className="inline-flex items-center gap-2 bg-[#1B1B59] hover:bg-[#1B1B59]/90 text-black font-black px-10 py-4 rounded-full text-lg uppercase tracking-wider transition-all hover:scale-105"
                     >
                         Get Funded Now

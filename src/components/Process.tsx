@@ -139,7 +139,7 @@ export default function Process() {
                 {/* CTA */}
                 <div className="text-center">
                     <Link
-                        href="#apply"
+                        href="#contact"
                         className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-[#1B1B59] font-bold px-8 py-4 rounded-lg transition-all text-lg"
                     >
                         Start Your Journey

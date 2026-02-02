@@ -74,7 +74,7 @@ export default function PropFunding() {
 
                     <ScrollAnimate delay={100}>
                         <Link
-                            href="#apply"
+                            href="#contact"
                             className="inline-block bg-[#D4AF37] hover:bg-[#B8962E] text-[#000000] font-extrabold py-4 sm:py-5 px-10 sm:px-16 rounded-lg text-base sm:text-lg md:text-xl uppercase tracking-wide transition-all hover:shadow-[0_0_30px_rgba(201,162,39,0.4)]"
                         >
                             BOOK YOUR STRATEGY CALL

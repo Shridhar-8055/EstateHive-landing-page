@@ -6,6 +6,7 @@ import WhyUAE from '@/components/WhyUAE';
 import NotForEveryone from '@/components/NotForEveryone';
 import GetStarted from '@/components/GetStarted';
 import PropFunding from '@/components/PropFunding';
+import ContactForm from '@/components/ContactForm';
 import Footer from '@/components/Footer';
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <NotForEveryone />
       <GetStarted />
       <PropFunding />
+      <ContactForm />
       <Footer />
     </main>
   );

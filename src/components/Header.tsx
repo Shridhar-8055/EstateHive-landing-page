@@ -16,7 +16,7 @@ export default function Header() {
 
                     {/* CTA Button */}
                     <Link
-                        href="#apply"
+                        href="#contact"
                         className="px-6 py-2 bg-transparent border-2 border-[#1B1B59] text-[#1B1B59] font-bold rounded-full hover:bg-[#1B1B59] hover:text-black transition-all text-sm uppercase tracking-wider"
                     >
                         Apply Now

@@ -68,7 +68,7 @@ export default function NotForEveryone() {
                 <ScrollAnimate delay={450}>
                     <div className="text-center">
                         <Link
-                            href="#apply"
+                            href="#contact"
                             className="inline-block bg-[#D4AF37] hover:bg-[#B8962E] text-[#000000] font-extrabold py-3 px-8 sm:py-4 sm:px-12 rounded-lg text-sm sm:text-base md:text-lg uppercase tracking-wide transition-all hover:shadow-[0_0_30px_rgba(201,162,39,0.4)]"
                         >
                             LET'S BUILD YOUR PLAN
