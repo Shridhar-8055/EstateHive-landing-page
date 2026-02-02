@@ -24,14 +24,8 @@ export default function Hero() {
                         />
                     </div>
 
-                    {/* Header Buttons */}
-                    <div className="flex items-center gap-2 sm:gap-4 h-[32px] sm:h-auto">
-                        <Link
-                            href="#contact"
-                            className="border border-[#D4AF37] hover:bg-[#D4AF37]/10 text-[#D4AF37] font-bold py-[5px] px-2.5 sm:py-2.5 sm:px-6 rounded-full text-[11px] sm:text-sm uppercase tracking-normal sm:tracking-wide transition-all duration-300 flex items-center"
-                        >
-                            CONTACT US
-                        </Link>
+                    {/* Header Button */}
+                    <div className="flex items-center h-[32px] sm:h-auto">
                         <Link
                             href="#contact"
                             className="bg-[#D4AF37] hover:bg-[#B8962E] hover:scale-105 text-[#000000] font-bold py-[5px] px-2.5 sm:py-2.5 sm:px-8 rounded-full text-[11px] sm:text-sm uppercase tracking-normal sm:tracking-wide transition-all duration-300 shadow-lg hover:shadow-[0_0_20px_rgba(0,206,209,0.5)] flex items-center"
