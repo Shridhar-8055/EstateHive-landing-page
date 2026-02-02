@@ -70,7 +70,7 @@ Message: ${formData.message || 'N/A'}`;
       <div className="max-w-2xl mx-auto px-4 md:px-8">
         <ScrollAnimate>
           <h2
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white mb-4 text-center"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-[#D4AF37] mb-4 text-center"
             style={{ fontFamily: '"Clash Display", sans-serif' }}
           >
             IF YOU DON'T WANT TO WAIT
