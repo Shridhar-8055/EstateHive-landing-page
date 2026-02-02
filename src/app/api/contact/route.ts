@@ -1,8 +1,6 @@
 import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(request: Request) {
   try {
     const body = await request.json();
@@ -16,9 +14,18 @@ export async function POST(request: Request) {
       );
     }
 
+    // Check if Resend API key is configured
+    if (!process.env.RESEND_API_KEY) {
+      console.log('Resend API key not configured - skipping email');
+      return NextResponse.json({ success: true, message: 'Form received (email disabled)' });
+    }
+
+    // Initialize Resend lazily (only when API is called)
+    const resend = new Resend(process.env.RESEND_API_KEY);
+
     // Send email notification
     const { data, error } = await resend.emails.send({
-      from: 'Estate Hive <onboarding@resend.dev>', // Change to your verified domain
+      from: 'Estate Hive <onboarding@resend.dev>',
       to: process.env.NOTIFICATION_EMAIL || 'your-email@example.com',
       subject: `New Lead: ${name} - Estate Hive`,
       html: `
