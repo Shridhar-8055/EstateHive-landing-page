@@ -73,7 +73,7 @@ Message: ${formData.message || 'N/A'}`;
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white mb-4 text-center"
             style={{ fontFamily: '"Clash Display", sans-serif' }}
           >
-            CONTACT US
+            IF YOU DON'T WANT TO WAIT
           </h2>
         </ScrollAnimate>
 
