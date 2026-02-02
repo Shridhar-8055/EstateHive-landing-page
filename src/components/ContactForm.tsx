@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import ScrollAnimate from './ScrollAnimate';
 
-const WHATSAPP_NUMBER = '918861183261';
+const WHATSAPP_NUMBER = '919036317765';
 
 const COUNTRY_CODES = [
   { code: '+91', country: 'India', flag: '🇮🇳', placeholder: '98765 43210' },
