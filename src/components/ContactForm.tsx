@@ -59,6 +59,16 @@ Message: ${formData.message || 'N/A'}`;
     const message = buildMessage();
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`, '_blank');
+
+    // Clear form after redirect
+    setFormData({
+      name: '',
+      email: '',
+      countryCode: '+91',
+      phone: '',
+      budget: '',
+      message: '',
+    });
   };
 
   const handleSubmit = (e: React.FormEvent) => {
