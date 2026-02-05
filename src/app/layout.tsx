@@ -106,7 +106,17 @@ export default function RootLayout({
         <link rel="icon" href="/EH_WHite@300x-8.png" />
         <link rel="apple-touch-icon" href="/EH_WHite@300x-8.png" />
       </head>
-      <body className={`${montserrat.className} ${merriweather.variable} antialiased`}>{children}</body>
+      <body className={`${montserrat.className} ${merriweather.variable} antialiased`}>
+        {children}
+        {/* AiSensy WhatsApp Chat Widget */}
+        <script
+          type="text/javascript"
+          src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
+          id="aisensy-wa-widget"
+          widget-id="aaaxjc"
+          async
+        />
+      </body>
     </html>
   );
 }
